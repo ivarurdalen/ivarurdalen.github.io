@@ -116,7 +116,7 @@ Summer 2009
 
 ::: {.d-flex .justify-content-between}
 ::: {}
-**MSc in Financial Engineering**  
+**[MSc in Financial Engineering](https://www.wqu.edu/programs/mscfe/)**  
 *World Quant University*
 :::
 ::: {.text-end}
@@ -130,7 +130,7 @@ Started 2022
 ::: {.d-flex .justify-content-between}
 ::: {}
 **MSc in Civil and Environmental Engineering**  
-*Norwegian University of Science and Technology (NTNU)*
+*Norwegian University of Science and Technology (NTNU)*  
 Average Grade: A
 :::
 ::: {.text-end}
@@ -167,7 +167,7 @@ South America
 ::: {.d-flex .justify-content-between}
 ::: {}
 **Technical Cybernetics**  
-*Norwegian University of Science and Technology (NTNU)*
+*Norwegian University of Science and Technology (NTNU)*  
 Grade (1st yr): A
 :::
 ::: {.text-end}
