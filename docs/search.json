@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "I am currently looking to transition from working as a Civil Engineer to Data Science and Data Engineering.\n\nKey Qualifications\n\n\nTechnologies\nHere is a list of technologies I consider myself sufficiently proficient to apply these in projects. However, I believe that a developer should always be ready to pick up new skills and learn new technology.\nLanguages: Python, JavaScript\nDatabases: PostgreSQL\nFrameworks: FastAPI\nOther skills: Cloud computing, containers using Docker, source control with Git\n\n\nWork Experience\n\n\nRamboll Norway\n\n\nAug 2017 - Nov 2022\n\n\nSenior Consulting Civil and Environmental Engineer\n\nLeading consulting projects for water engineering (pipelines, pumping stations, treatment plants, stormwater design, etc.)\nTypically having the Discipline Lead role in projects\nTasks: Producing tender documents, reports, design review, project management, BIM/CAD design.\nExample of IT project: Assisting in deploying prototype for project QA with Python web app (Flask framework)\n\n\n\nAqua Unique Norway\n\n\n08.2015 - 07.2027\n\n\nProject Manager\n\nTask: Technical design in project, project management, contracts, supplier negotiations, marketing, strategy and recruitment.\nDevelopment of Excel spreadsheets for project budgets, pricing models, supplier comparison, technical design, etc.\nAssisting with operation of IT infrastructure (website, email, file server, backup, wiki, CRM system, etc)\n\n\n\nAsplan Viak\n\n\nAug 2014 - Sept 2015\n\n\nConsulting Civil Engineer\n\nTasks: Water and wastewater treatment plant desig and BIM/CAD modelling. Material takeoff, P&ID, tender documents.\n\n\n\nCOWI\n\n\nSummer 2012\n\n\nSummer Intern\n\nDesign of water distribution systems, and CAD modelling.\n\n\n\nSilicon Labs (formerly Energy Micro)\n\n\nSummer 2009\n\n\nSummer Intern\n\nC programming for development kit for energy efficient microcontroller.\n\n\n\nEducation\n\n\nMSc in Civil and Environmental Engineering\nNorwegian University of Science and Technology (NTNU) Average Grade: A\n\n\nTrondheim, Norway June 2015\n\n\n\nSpecialization: Water and Wastewater Engineering\nAdditional courses in Computer Science and Finance.\n\n\n\nMSc Student exchange\nFederal University of Santa Catarina\n\n\nFlorianópolis, Brazil\n2014\n\n\n\n\nSpanish and Portuguese language studies\nSelf studies while traveling\n\n\nSouth America\n2013\n\n\n\n\nTechnical Cybernetics\nNorwegian University of Science and Technology (NTNU) Grade (1st yr): A\n\n\nTrondheim, Norway\n2008 - 2009\n\n\n\n\nAwards\n\nWinner of Norwegian Informatics Olympiad for High School Students\n\n\nAlgorithmic Programming Competition for High School Students (C++ Programming) Participated in Baltic Informatics Olympiad (BOI) and International Olympiad in Informatics (IOI).\n\n\n2007\n\n\n\n\n\nAdditional Courses\n\n\nMachine Learning (Stanford, Coursera)\n\n\n2012\n\n\n\n\nComputer for Data Analysis (John Hopkins, Coursera)\n\n\n2013\n\n\n\n\nData Analysis and Statistical Inference (Duke, Coursera)\n\n\n2014\n\n\n\n\nLanguages\n\n\nPortuguese, English and Norwegian\n\n\nSpeak and write fluently\n\n\n\n\nSpanish\n\n\nGood understanding"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ivar Soares Urdalen",
+    "section": "",
+    "text": "Hi! Welcome to Ivar Soares Urdalen’s personal website.\nFeel free to check out my online CV.\nOr check out my portfolio of different projects."
+  },
+  {
+    "objectID": "portfolio.html",
+    "href": "portfolio.html",
+    "title": "Portfolio",
+    "section": "",
+    "text": "This is the start of my portfolio projects page."
+  }
+]

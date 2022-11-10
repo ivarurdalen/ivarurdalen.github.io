@@ -1,0 +1,26 @@
+---
+title: "Ivar Soares Urdalen"
+image: profile.jpg
+description-meta: I'm Ivar. Let us discuss data!
+about:
+    template: trestles
+    image-shape: rounded
+    image-width: 15em
+    links: 
+          - icon: github
+            text: Github
+            href: https://github.com/ivarurdalen
+          - icon: linkedin
+            text: LinkedIn
+            href: https://no.linkedin.com/ivarurdalen
+          - icon: envelope
+            text: Email
+            href: "mailto:ivar.urdalen@gmail.com"
+
+---
+
+Hi! Welcome to Ivar Soares Urdalen's personal website.  
+
+Feel free to [check out my online CV](cv.qmd).  
+
+Or check out my [portfolio of different projects](portfolio.qmd).

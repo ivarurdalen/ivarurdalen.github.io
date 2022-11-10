@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Ivar Soares Urdalen - Data Science and Engineer"
+  open-graph: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: cv.qmd
+      - href: portfolio.qmd
+      # - href: blog.qmd
+  site-url: "http://ivarurdalen.github.io"
+
+format:
+  html:
+    theme: pulse
+    css: styles.css
+    toc: true
+    toc-title: "Contents"
+
+
+
