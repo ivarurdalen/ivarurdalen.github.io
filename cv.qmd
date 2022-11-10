@@ -15,6 +15,35 @@ However, I believe that a developer should always be ready to pick up new skills
 **Frameworks:** FastAPI  
 **Other skills:** Cloud computing, containers using Docker, source control with Git
 
+### Online Courses
+
+::: {.d-flex .justify-content-between}
+::: {}
+[Machine Learning (Stanford, Coursera)](files/machine-learning.pdf)
+:::
+::: {.text-end}
+2012
+:::
+:::
+
+::: {.d-flex .justify-content-between}
+::: {}
+[Computer for Data Analysis (John Hopkins, Coursera)](files/computing-for-data-analysis.pdf)
+:::
+::: {.text-end}
+2013
+:::
+:::
+
+::: {.d-flex .justify-content-between}
+::: {}
+[Data Analysis and Statistical Inference (Duke, Coursera)](https://www.coursera.org/account/accomplishments/records/QTWF8YK53Z)
+:::
+::: {.text-end}
+2014
+:::
+:::
+
 ### Work Experience
 
 ::: {.d-flex .justify-content-between}
@@ -87,6 +116,19 @@ Summer 2009
 
 ::: {.d-flex .justify-content-between}
 ::: {}
+**MSc in Financial Engineering**  
+*World Quant University*
+:::
+::: {.text-end}
+Online
+Started 2022
+:::
+:::
+- Courses: Financial Markets, Financial Data, Financial Econometrics
+- Heavy focus on using Python and its capabilities for data and statistical analysis
+
+::: {.d-flex .justify-content-between}
+::: {}
 **MSc in Civil and Environmental Engineering**  
 *Norwegian University of Science and Technology (NTNU)*
 Average Grade: A
@@ -144,36 +186,6 @@ Participated in Baltic Informatics Olympiad (BOI) and International Olympiad in 
 :::
 ::: {.text-end}
 2007
-:::
-:::
-
-### Additional Courses
-
-
-::: {.d-flex .justify-content-between}
-::: {}
-[Machine Learning (Stanford, Coursera)](files/machine-learning.pdf)
-:::
-::: {.text-end}
-2012
-:::
-:::
-
-::: {.d-flex .justify-content-between}
-::: {}
-[Computer for Data Analysis (John Hopkins, Coursera)](files/computing-for-data-analysis.pdf)
-:::
-::: {.text-end}
-2013
-:::
-:::
-
-::: {.d-flex .justify-content-between}
-::: {}
-[Data Analysis and Statistical Inference (Duke, Coursera)](https://www.coursera.org/account/accomplishments/records/QTWF8YK53Z)
-:::
-::: {.text-end}
-2014
 :::
 :::
 

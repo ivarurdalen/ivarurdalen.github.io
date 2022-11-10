@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Ivar Soares Urdalen - Data Science and Engineer"
+  title: "Ivar Soares Urdalen - Data Science"
   open-graph: true
   navbar:
     left:
@@ -16,7 +16,8 @@ website:
 
 format:
   html:
-    theme: pulse
+    theme: flatly
+    fontsize: 1.0em
     css: styles.css
     toc: true
     toc-title: "Contents"

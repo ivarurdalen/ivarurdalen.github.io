@@ -12,7 +12,7 @@ about:
             href: https://github.com/ivarurdalen
           - icon: linkedin
             text: LinkedIn
-            href: https://no.linkedin.com/ivarurdalen
+            href: https://www.linkedin.com/in/ivarurdalen/
           - icon: envelope
             text: Email
             href: "mailto:ivar.urdalen@gmail.com"
@@ -24,3 +24,11 @@ Hi! Welcome to Ivar Soares Urdalen's personal website.
 Feel free to [check out my online CV](cv.qmd).  
 
 Or check out my [portfolio of different projects](portfolio.qmd).
+
+<!-- ----  
+
+## Summary  
+This is a short summary of my skills.  
+
+----
+## Education -->
