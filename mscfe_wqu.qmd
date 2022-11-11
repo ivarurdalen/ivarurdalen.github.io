@@ -1,0 +1,122 @@
+---
+title: "MSc Financial Engineering - World Quant University"
+format: html
+---
+I am currently studying for this masters program at World Quant University. If you are curious about what is the syllabus and content of the masters, here is a summary from the student catalog.
+
+
+### 560: Financial Markets
+In this pilot course for the program, students are introduced to the world of professional
+finance: markets, products, participants, and regulation. The activities within financial markets will
+be discussed, including trading, financing, brokering, pricing, hedging, optimizing, and managing
+risk. Throughout the course, students identify a list of significant factors that affect the financial
+industry.  
+Understanding the asset classes, activities, and influential aspects of the financial landscape will
+provide a solid foundation on which students will build mathematical and computational tools to
+develop models for financial engineering. No background in finance is required.
+<!-- This course will look at the different risks such as:
+* Statistical risk: Volatility and Correlation -->
+
+### 600: Financial Data
+This course introduces students to financial data: the source of energy for financial models.
+Students will learn how to apply Python to properly select, import, filter, structure, visualize,
+summarize, and analyze financial data for interest rates, equities, cryptocurrencies, ETFs,
+securitized products, and other asset classes. Students will also learn how to prepare data to be
+used in models for financial markets, from which decisions can be made, and how to accomplish
+fundamental analysis with accounting data, technical analysis with trading data, statistical analysis
+with transformed data, and sentiment analysis with textual data. Software engineering,
+visualization techniques, probability and statistics, linear algebra, and presentation skills will be
+developed throughout the course. The ultimate goal of this course is to build foundational skills
+that enable students to understand the type of data needed depending on their goals, how to
+source it, structure it, shape it, build with it, and discover what it tells. At their best, financial
+engineers turn data into empirically based, well-calibrated financial models whose output
+provides investors and risk managers with sound decisions in the uncertain world of finance.
+
+
+### 610: Financial Econometrics
+This course provides a comprehensive introduction to financial econometrics. Students will learn
+how to model probability distributions of returns, including graphical, Bayesian, and non-
+parametrical methods. They will also learn how to model univariate time series, focusing on their
+moving average, autocorrelations, and volatilities, including GARCH models. Students will build
+additional tools to see how two financial series can relate to each other, using correlation, vector
+autoregressions, and cointegration. Further, they will build the statistical foundation and Python
+coding skills to run econometric models to apply in financial decision making. Finally, they will see
+how the ideas of bias, variance, and overfitting apply to machine learning.
+
+### 620: Derivative Pricing
+Derivative Pricing is a hands-on course focused on pricing options. Students will build a
+conceptual background that deepens their understanding of why classical calculus is not sufficient
+for detecting rates of change in stochastic processes. Course content focuses on the concept of
+no-arbitrage and perfect replication using the world of stochastic calculus, including the Black-
+Scholes Model. Students will be able to construct pricing models such as binomial trees and finite
+difference methods to price an array of vanilla and exotic options. They will also measure
+sensitivities of the price to variables, such as the underlying price, volatility, time, interest rates,
+and carry costs. Finally, some extensions to classical models, such as the Heston Model and jump
+models will be addressed. Much of the course will include Python illustrations to build practical
+skills.
+
+### 622: Stochastic Modeling
+In this course, students increase their knowledge of modeling stochastic processes. Students will
+investigate advanced volatility models that upgrade Black Scholes parameters to variables,
+increasing their stochastic modeling skills to address heteroskedasticity and variable costs as well
+as jump diffusions. Students will dive into Markov processes, including hidden Markov process
+and Markov decision process to financial applications, and will build a mathematical foundation
+for deep learnings, a tool they will use for machine learnings. Overall, students will be able to
+evaluate the assumptions, benefits, and difficulties associated with stochastic models.
+
+### 630: Computational Finance
+Computational Finance is an advanced computing course that builds skills in optimization,
+calibration, and simulation. Student will use data to calibrate models using a variety of numerical
+methods, including parametric and non-parametric methods of statistical inference, linear and
+non-linear methods, and deterministic and stochastic programming methods. Where problems of
+skewness and heteroskedasticity occur, students will use techniques to handle non-normality.
+Students will learn how to run simulations, from classical Monte Carlo methods to Markov Chain
+Monte Carlo simulation, to agent-based simulations. Student will be able to calibrate the models
+they learned in the Derivative Pricing course through numerical, computational, and machine
+learning techniques. Python will be used to illustrate these models, from which students will adapt
+and apply to fit their own data sets. Once students have calibrated models or optimized portfolios,
+they will interpret the coefficients and apply the results to financial decision making.
+
+
+### 642: Machine Learning in Finance
+This course addresses the fundamentals of machine learning. It continues the topics from the
+Financial Econometrics course whereby students will be able to apply algorithms to learn from
+data. Students will cover the mathematical and computational foundations of both the supervised
+and unsupervised machine learning problems, and they will use Python modules and a Tensorflow
+framework to predict, explain, or compare outcomes across different financial series. Students will
+apply machine learning techniques to determine if financial models are overfit, and use methods
+of regularization, cross-validation, and resampling techniques to mitigate it. In addition, students
+will develop a theoretical and practical background in deep learning models to improve the power
+of their financial model predictions.
+
+### 652: Portfolio Management
+This course provides students with methodologies and skills to perform portfolio optimization.
+From the previous coursework, students will have a solid foundation on which to engage in the
+portfolio management process. In the first two modules, students will review classical methods of
+portfolio theory, including Markowitz portfolio optimization. Subsequent modules address more
+modern versions of the portfolio optimization process, including Black-Litterman, probabilistic
+scenario optimization, prospect theory, Kelly criterion, and risk parity. In addition, advanced
+econometrics and machine learning methods will be applied to the classical techniques, including
+the use of neural networks, genetic algorithms, information theory, and reinforcement learning.
+The course requires students to engage with the mathematical foundations, code implementation,
+and practical applications of portfolio management across many asset classes.
+
+### 660: Risk Management
+This course provides students with both classical and modern methods of modeling and
+managing risk. The course begins by reviewing metrics and models for market, credit, and
+systemic risk, and applying these ideas to multiple asset classes, including derivatives. Machine
+learning methods will be integrated with both classical methods like VaR and GARCH and with
+robust methods like Extreme Value Theory. Then a comprehensive review of Bayesian methods
+will be given that builds towards a Bayesian network of modeling systemic risk. By taking the
+course, students will be able to synthesize a complex network and scenario analysis for both
+portfolio risk and systemic risk.
+
+
+### 690: Capstone Course
+The Capstone Course is designed to put the students’ knowledge of financial engineering to the
+test. Students practically apply their understanding of the program content by accomplishing
+project milestones from developing a problem statement, identifying the required technology to
+find a solution to the problem, submitting multiple drafts for peer review and instructor feedback,
+and finalizing and presenting their fully developed project. The goal of the Capstone Course is to
+ensure that students have met the program outcomes and are able to apply their knowledge and
+skills to real-world scenarios.

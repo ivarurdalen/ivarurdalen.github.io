@@ -1,6 +1,11 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "!cv.qmd"
+    - "!mscfe_wqu.qmd"
+    - "!portfolio.qmd"
 
 website:
   title: "Ivar Soares Urdalen - Data Science"
@@ -9,14 +14,21 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: cv.qmd
-      - href: portfolio.qmd
+      - href: cv_ivar.html
+        text: CV
+      # - href: portfolio.qmd
+      # - href: mscfe_wqu.qmd
+      #   text: MSc FE WQU
       # - href: blog.qmd
   site-url: "http://ivarurdalen.github.io"
+  search:
+    location: navbar
+    type: overlay
 
 format:
   html:
     theme: flatly
+    # theme: journal
     fontsize: 1.0em
     css: styles.css
     toc: true
