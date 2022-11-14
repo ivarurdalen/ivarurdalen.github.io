@@ -4,32 +4,81 @@ project:
   render:
     - "*.qmd"
     - "!cv.qmd"
-    - "!mscfe_wqu.qmd"
-    - "!portfolio.qmd"
+    - "!notes/mscfe_wqu.qmd"
+    - "!mscfe-wqu/*.qmd"
+    - "!blog/*.qmd"
+    # - "!portfolio.qmd"
 
 website:
   title: "Ivar Soares Urdalen - Data Science"
   open-graph: true
+  site-url: https://ivarurdalen.github.io
+  repo-url: https://www.github.com/ivarurdalen/ivarurdalen.github.io
+  repo-actions: [edit, issue]
+  search:
+    location: navbar
+    type: overlay
+  page-footer: 
+    left: |
+      Website made with [Quarto](https://www.quarto.org)
   navbar:
+    # background: light
+    search: true
     left:
-      - href: index.qmd
-        text: Home
-      - href: cv_ivar.html
-        text: CV
+      - text: "Home"
+        file: index.qmd
+      - text: "CV"
+        file: cv_ivar.qmd
+      - text: "Notes" 
+        file: notes/index.qmd
+      - text: "Portfolio"
+        file: site/portfolio/index.qmd
+      # - text: "Blog"
+      #   file: site/blog/index.qmd
+
+    right: 
+      - icon: github
+        href: https://github.com/ivarurdalen/ivarurdalen.github.io
       # - href: portfolio.qmd
       # - href: mscfe_wqu.qmd
       #   text: MSc FE WQU
       # - href: blog.qmd
-  site-url: "http://ivarurdalen.github.io"
-  search:
-    location: navbar
-    type: overlay
+  
+  sidebar: 
+    # - id: notes
+    - title: "Notes"
+      style: "floating"
+      collapse-level: 2
+      align: left
+      contents: 
+        # - text: "Notes"
+          # href: notes/index.qmd
+        - notes/index.qmd
+        - section: "Algorithmic Trading"
+          contents:
+            - notes/trading/index.qmd
+            - notes/trading/strategies.qmd
+        - section: "Databases"
+          contents:
+            - notes/databases/sql.qmd
+            - notes/databases/financial-database.qmd
+    
+    - title: "Portfolio"
+      contents: 
+        - site/portfolio/index.qmd
 
+    # - title: "Blog"
+    #   contents: 
+    #     - site/blog/index.qmd
+
+  
 format:
   html:
-    theme: flatly
+    theme: zephyr
     # theme: journal
     fontsize: 1.0em
+    code-copy: true
+    code-overflow: wrap
     css: styles.css
     toc: true
     toc-title: "Contents"

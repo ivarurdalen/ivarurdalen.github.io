@@ -1,0 +1,34 @@
+---
+title: "SQL"
+format: html
+editor: visual
+---
+Here I gather some of the common commands for SQL databases
+
+## MySQL
+Create and use new database:
+```sql
+CREATE DATABASE new_db;
+USE DATABASE new_db;
+```
+Create a new user:
+```sql
+CREATE USER 'new_user'@'localhost' IDENTIFIED BY 'new_password';
+```
+
+Set privileges of the created user
+```sql
+GRANT ALL PRIVILEGES ON new_db.* TO 'new_user'@'localhost';
+FLUSH PRIVILEGES;
+```
+
+## PostgreSQL
+Create a new user:
+```sql
+CREATE USER new_user WITH PASSWORD 'new_password';
+```
+
+Set privileges of the created user
+```sql
+GRANT ALL PRIVILEGES ON DATABASE new_db TO new_user;
+```

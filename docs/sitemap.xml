@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://ivarurdalen.github.io/index.html</loc>
-    <lastmod>2022-11-11T14:42:29.804Z</lastmod>
+    <loc>https://ivarurdalen.github.io/cv_ivar.html</loc>
+    <lastmod>2022-11-14T02:54:24.082Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ivarurdalen.github.io/index.html</loc>
+    <lastmod>2022-11-14T02:54:31.450Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ivarurdalen.github.io/notes/data-science/resources.html</loc>
+    <lastmod>2022-11-14T02:54:32.293Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ivarurdalen.github.io/notes/databases/financial-database.html</loc>
+    <lastmod>2022-11-14T02:54:33.150Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ivarurdalen.github.io/notes/databases/sql.html</loc>
+    <lastmod>2022-11-14T02:54:34.314Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ivarurdalen.github.io/notes/index.html</loc>
+    <lastmod>2022-11-14T02:54:35.418Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ivarurdalen.github.io/notes/trading/index.html</loc>
+    <lastmod>2022-11-14T02:54:36.628Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ivarurdalen.github.io/notes/trading/strategies.html</loc>
+    <lastmod>2022-11-14T02:54:37.480Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ivarurdalen.github.io/site/blog/posts/2022-11-11-data-for-OSE/index.html</loc>
+    <lastmod>2022-11-14T02:54:38.362Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ivarurdalen.github.io/site/portfolio/index.html</loc>
+    <lastmod>2022-11-14T02:54:39.188Z</lastmod>
   </url>
 </urlset>

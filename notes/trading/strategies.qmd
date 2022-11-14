@@ -1,0 +1,69 @@
+---
+title: "Trading Strategies"
+format: html
+page-layout: article
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+This note will describe the main categories of trading strategies.\
+There are 2 main trading strategies: Trend Following and Mean Reversion.
+
+There are other strategies as well, but they will be elaborated on at a
+later stage.
+
+## Trend Following
+
+**Objective:** To enter when a new trend is established, and exit when
+the trend is over.
+
+**Indicators:**
+
+-   Moving averages (most common)
+
+-   Trendlines
+
+-   Average Directional Index (measure trend strength)
+
+-   Linear Regression (forecast, slope)
+
+-   Supertrend
+
+**Challenge**: Maintain small losses for losing trades.
+
+**Summary**
+
+Trend following have a few great trades with larger profits, and small
+losses on a larger amount of trades. Can go through periods of poor
+performance.
+
+## Mean Reversion
+
+**Objective:** Assuming the price will revert back to a mean. Look to
+buy oversold, and sell overbought.
+
+**Indicators:**
+
+-   Relative Strength Index
+-   Bollinger Bands
+-   Disparity Index (distance from moving average)
+-   Stochastic oscillator
+
+**Challenge:** Mean reversion is exposed to left tail risk (huge
+infrequent losses). Can take a long time to recover from big losses.
+
+**Summary:** Mean reversion typically have small consistent profits, and
+low volatility in the strategy.
+
+## Trend Following vs Mean Reversion
+
+Comparison of key performance metrics:
+
+| Performance Metric | Trend Following | Mean Reversion |
+|--------------------|-----------------|----------------|
+| Win rate           | Low             | High           |
+| Trade duration     | Long            | Short          |
+| Number of trades   | Low             | High           |
+| Profit per trade   | Higher          | Low            |
+| Volatility         | High            | Low            |

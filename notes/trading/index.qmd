@@ -1,0 +1,104 @@
+---
+title: "Resources"
+# pagetitle: "Resources"
+format:
+  html:
+    toc: false
+    page-layout: article
+# image: articles/advanced-layout-pdf.png
+search: false
+execute:
+  echo: false
+listing:
+  - id: gallery
+    template: gallery.ejs
+    contents: gallery.yml
+description: |
+  A list of most important educational resources for algorithmic trading
+---
+
+::: {#gallery .column-page-right}
+:::
+
+## Courses
+
+**[Investment Management with Python and Machine Learning Specialization](https://www.coursera.org/specializations/investment-management-python-machine-learning)**  
+4 courses from EDHEC Business School in Paris. Keywords: portfolio construction, factor models, risk management, diversification.  
+
+**[Machine Learning and Reinforcement Learning in Finance Specialization](https://www.coursera.org/specializations/machine-learning-reinforcement-finance)**  
+4 courses from New York University.  
+
+**[Machine Learning for Trading - Coursera](https://www.coursera.org/specializations/machine-learning-trading)**  
+3 courses from New York Institute of Finance. Focus on practical implementation in Python.  
+  
+**[Machine Learning for Trading - Udacity](https://www.udacity.com/course/machine-learning-for-trading--ud501)**  
+Free course at Udacity from Georgia Tech. Keywords: probabilistic machine learning, linear regression, KNN and regression trees  
+
+<!-- | Course                                                                                       | Description                                                                          |
+|-------------------------------------|-----------------------------------|
+| [Investment Management with Python and Machine Learning Specialization](https://www.coursera.org/specializations/investment-management-python-machine-learning) | 4 courses from EDHEC Business School in Paris. Keywords: portfolio construction, factor models, risk management, diversification.        |
+| [Machine Learning and Reinforcement Learning in Finance Specialization](https://www.coursera.org/specializations/machine-learning-reinforcement-finance) | 4 courses from New York University.                                  |
+| [Machine Learning for Trading - Coursera](https://www.coursera.org/specializations/machine-learning-trading)     | 3 courses from New York Institute of Finance. Focus on practical implementation in Python. |
+| [Machine Learning for Trading - Udacity](https://www.udacity.com/course/machine-learning-for-trading--ud501)     | Free course at Udacity from Georgia Tech. Keywords: probabilistic machine learning, linear regression, KNN and regression trees |
+
+: {tbl-colwidths="\[30,70\]"} -->
+
+<!-- ```{=html}
+<style>
+
+#hero-banner {
+  padding-top: 35px;
+  background-color: rgb(237,243,249);
+}
+
+#quarto-content main { 
+  margin-top: 0;
+  padding-top: 0;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.headline {
+font-size: 1.25em;
+font-weight: 300;
+padding-bottom: 1em;
+}
+
+.headline p {
+  margin: 0;
+  padding-bottom: 0.2rem;
+}
+
+.headline a {
+  text-decoration: none;
+}
+
+.headline ul li {
+  margin-bottom: 0.3em;
+}
+
+.carousel.card {
+  padding-top: 2em;
+}
+
+.carousel img {
+  width: 70%;
+  margin-bottom: 110px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  margin-bottom: 110px;
+}
+
+.carousel-caption {
+  padding-top: 1em;
+}
+
+.touch {
+  
+}
+</style>
+``` -->

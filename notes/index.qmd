@@ -1,0 +1,8 @@
+---
+title: "Notes"
+page-layout: article
+---
+
+Welcome to my open notebook! I will use this open notebook to record what I learn mostly regarding data science and financial engineering.
+It can also be called my Digital Garden or Second Brain.
+

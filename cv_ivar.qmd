@@ -1,0 +1,199 @@
+---
+title: ""
+format: 
+  html:
+    theme: journal
+    css: custom.css
+    page-layout: article
+    output-file: cv_ivar.html
+    standalone: true
+    embed-resources: true
+    date: 11.11.2022
+editor: visual
+knitr:
+  opts_chunk: 
+    echo: false
+    message: false
+    warning: false
+---
+
+```{r}
+#| include: false
+#| cache: false
+googlesheets4::gs4_deauth()
+cv_url <- "https://docs.google.com/spreadsheets/d/1mORzRlwt7in5yxdu7UiMhEDQQJQWvuXeqcFjh_dP0Qo/edit?usp=sharing"
+cv <- googlesheets4::read_sheet(cv_url)
+```
+
+<!-- Sidebar -->
+
+<!-- :::: columns -->
+<!-- ::: {.column .aside width="25%"} -->
+<!-- ::: {.column-margin} -->
+::: {.grid}
+
+::: {.g-col-4}
+<center>[![](profile_160.jpg)](https://www.ivarurdalen.com)</center>
+
+</a>
+
+### Contact
+<!-- <center> -->
+<span style="font-size: 1.5em;"> <a href='https://ivarurdalen.github.io' target='_blank'><i class="fa fa-home"></i></a> <a href='https://github.com/ivarurdalen' target='_blank'><i class="fa-brands fa-github"></i></a> <a href='mailto:ivar.urdalen@gmail.com'><i class="fa fa-envelope"></i></a> <a href='https://www.linkedin.com/in/ivarurdalen/' target='_blank'><i class="fa-brands fa-linkedin"></i></a>
+<!-- </center> -->
+</span>
+
+<!-- ### Teaching -->
+
+<!-- <i class="fas fa-chalkboard-teacher"></i> [`tidyverse` certified trainer by RStudio](https://education.rstudio.com/trainers/people/milz+beatriz/). <br> <i class="fas fa-chalkboard-teacher"></i> [The Carpentries instructor](https://carpentries.org/). -->
+
+### Programming skills
+
+Here is a list of technologies I am proficient in to apply in projects.
+However, I believe that a developer should always be ready to pick up new skills and learn new technology.
+
+**Languages:** <i class="fa-brands fa-python"></i> Python, JavaScript, R  
+**Databases:** <i class="fa-solid fa-database" aria-hidden="true"></i> SQL (MySQL, PostgreSQL)  
+**Frameworks:** FastAPI, Dash(Plotly)  
+**Other skills:** <i class="fa-solid fa-cloud"></i> AWS, Azure (cloud computing), Docker (containers), <i class="fa-brands fa-github"></i> Git (source control)
+
+<!-- <i class="fa-brands fa-python"></i> `Python` <br> <i class="fa-solid fa-database" aria-hidden="true"></i> `MySQL / PostgreSQL` <br> <i class="fa-solid fa-cloud"></i> `Cloud computing` <br> <i class="fa-brands fa-github"></i> `Git` <i class="fab fa-r-project"></i> `R` <br> <i class="fa fa-area-chart" aria-hidden="true"></i> `tidyverse` <br> <i class="fab fa-markdown"></i> `RMarkdown / Quarto` <br> <i class="fas fa-code-branch"></i> `Git` <br> <i class="fab fa-github"></i> `GitHub` <br> <i class="fab fa-markdown"></i> `Markdown` <br> <i class="fab fa-html5"></i> `HTML` <br> <i class="fab fa-css3-alt"></i> `CSS` <br> -->
+
+### Languages
+
+**Norwegian:** Native <br> **English:** Speak and write fluently <br> **Portuguese:** Speak and write fluently
+
+<!-- ### Awards -->
+
+<!-- <i class="far fa-star"></i> [](https://www.rstudio.com/conference/) - Diversity Scholarship. -->
+
+<!-- <i class="far fa-star"></i> [FAPESP](https://fapesp.br/). Doctorate Scholarship - 2019-2021. -->
+
+<!-- <i class="far fa-star"></i> [useR! 2019](https://user2019.r-project.org/) - Diversity Scholarship. -->
+
+<!-- <i class="far fa-star"></i> [LatinR 2019](https://latin-r.com/) - Diversity Scholarship. -->
+
+<!-- ### Software review -->
+
+<!-- <i class="fas fa-box-open"></i> [R OpenSci](https://ropensci.org/): [reviews available here](https://github.com/beatrizmilz/ropensci_reviews#ropensci-reviews). -->
+
+<!-- ### Software -->
+
+<!-- <i class="fas fa-box-open"></i> [Package {dados} - Available on CRAN](https://cienciadedatos.github.io/dados/) - Co-Author. -->
+
+<!-- <br> -->
+
+<!-- <i class="fas fa-box-open"></i> [Package {mananciais}](https://beatrizmilz.github.io/mananciais/) - Author, maintainer. -->
+
+:::
+
+<!-- ::: {.column width="5%"} -->
+<!-- ::: -->
+
+<!-- ::: {.column width="70%"} -->
+::: {.g-col-8}
+<!-- ::: {.column-body} -->
+<!-- Functions -->
+
+```{r}
+col_br <- function(col){
+    dplyr::if_else(
+      !is.na(col) & col != "N/A|NA", 
+      paste0(col, ""),
+      ""
+    )
+}
+
+col_br_loc <- function(col){
+    dplyr::if_else(
+      !is.na(col) & col != "N/A|NA", 
+      paste0('<br><i class="fa-solid fa-location-dot"></i> ', col),
+      ""
+    )
+}
+
+create_section <- function(cv_data, section_name){
+  cv_data |>
+    dplyr::mutate(in_resume = as.character(in_resume),
+                  end = tidyr::replace_na(end, 9999),
+                  loc = dplyr::if_else(loc == "Online", NA_character_, loc)) |>
+    dplyr::filter(in_resume %in% c("TRUE", "VERDADEIRO"), section == section_name) |>
+    dplyr::select(section:description_1) |>
+    dplyr::arrange(desc(end), desc(start)) |>
+    dplyr::mutate(
+      date =
+        dplyr::case_when(
+          end == 9999 ~ glue::glue("Current <br> | <br> {start}"),
+          end != start ~ glue::glue("{end} <br> | <br> {start}"),
+          end == start ~ glue::glue("{end}"),
+          TRUE ~ ""
+        ) ,
+      .before = everything()
+    ) |>
+    dplyr::mutate(
+      main_text =
+        glue::glue(
+          "**{title}** <br> {col_br(institution)} <br> {col_br(description_1)} {col_br_loc(loc)}"),
+      .after = date
+    ) |>
+    dplyr::select(-c(start, end, section, title, institution, loc, description_1)) |>
+    gt::gt() |>
+    gt::fmt_markdown(columns = c(date, main_text)) |> 
+    gt::tab_options(column_labels.hidden = TRUE, table.width = gt::pct(100)) |> 
+    gt::cols_align(align = "left", columns = main_text)
+}
+```
+
+<!-- Main content -->
+
+# Ivar Soares Urdalen
+
+Hi! I am on a path for changing careers from Civil Engineering to Data Science. I am currently pursuing a [MSc in Financial Engineering](https://www.wqu.edu/programs/mscfe/) from [World Quant University](https://www.wqu.edu/) while also taking courses and pursuing own coding projects in data science. Check out my [website](https://ivarurdalen.github.io) to learn more about me and connect.
+
+## <i class="fa-solid fa-suitcase"></i> Work
+
+```{r}
+create_section(cv, "working_experience")
+```
+
+## <i class="fa-solid fa-graduation-cap"></i> Education
+
+```{r}
+create_section(cv, "education")
+```
+
+## <i class="fa-solid fa-award"></i> Awards
+
+```{r}
+create_section(cv, "awards")
+```
+
+## <i class="fa-solid fa-chalkboard-user"></i> Courses
+
+```{r}
+create_section(cv, "online_courses")
+```
+
+
+<!-- ## <i class="fa-solid fa-person-chalkboard"></i> Selected teaching experience -->
+
+<!-- ```{r} -->
+
+<!-- create_section(cv, "teaching_experience") -->
+
+<!-- ``` -->
+:::
+
+:::
+
+<!-- footer -->
+
+<p class="footer">
+
+Resume made with 💜 and [Quarto](https://quarto.org/). Last updated on `r format.Date(Sys.Date(), "%b %d, %Y")`. <br> Code available on <i class="fa-brands fa-github"></i> [GitHub](https://github.com/ivarurdalen/cv/blob/main/docs/index.qmd). <br>License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).
+
+</p>
+
+```{=html}
+<script src="https://kit.fontawesome.com/1bb720cc6f.js" crossorigin="anonymous"></script>
+```

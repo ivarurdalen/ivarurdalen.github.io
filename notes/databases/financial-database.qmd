@@ -1,0 +1,53 @@
+---
+title: "Financial Database"
+format: html
+page-layout: article
+---
+
+In this article we layout how to setup a financial database for prices for securities. It is inspired by Michael L. Halls-Moore book: Successful Algorithmic Trading.
+
+The following tables in database is recommended:
+
+| Table      | Description                                            |
+|------------|--------------------------------------------------------|
+| Exchange   | Example: NASDAQ, Oslo Stock Exchange, NYSE, etc.       |
+| DataVendor | Example: Yahoo Finance, AlphaVantage, NASDAQ Data Link |
+| Symbol     |                                                        |
+| DailyPrice |                                                        |
+
+For MySQL
+
+-   Use InnoDB engine
+
+-   Use UTF-8 for all tables
+
+## Schemas
+
+### DailyPrice:
+
+| Column         | Type     | Description |
+|----------------|----------|-------------|
+| id             | integer  | Primary Key |
+| data_vendor_id | integer  | Foreign Key |
+| symbol_id      | integer  | Foreign Key |
+| price_date     | datetime |             |
+| open           | decimal  |             |
+| high           | decimal  |             |
+| low            | decimal  |             |
+| close          | decimal  |             |
+| adj_close      | decimal  |             |
+| volume         | bigint   |             |
+
+### Symbol:
+
+| Column            | Type     | Description |
+|-------------------|----------|-------------|
+| id                | integer  | Primary Key |
+| exchange_id       | integer  | Foreign Key |
+| ticker            | varchar  |             |
+| instrument        | varchar  |             |
+| name              | varchar  |             |
+| sector            | varchar  |             |
+| currency          | varchar  |             |
+| created_date      | datetime |             |
+| last_updated_date | datetime |             |

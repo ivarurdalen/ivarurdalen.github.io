@@ -23,7 +23,7 @@ Hi! Welcome to Ivar Soares Urdalen's personal website.
 
 Feel free to [check out my online CV](cv_ivar.html).  
 
-Or check out my [portfolio of different projects](portfolio.qmd).
+Or check out my [portfolio of different projects](site/portfolio/index.qmd).
 
 <!-- ----  
 

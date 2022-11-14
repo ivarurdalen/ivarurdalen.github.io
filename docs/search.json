@@ -1,9 +1,107 @@
 [
   {
+    "objectID": "cv_ivar.html",
+    "href": "cv_ivar.html",
+    "title": "Ivar Soares Urdalen - Data Science",
+    "section": "",
+    "text": "Here is a list of technologies I am proficient in to apply in projects. However, I believe that a developer should always be ready to pick up new skills and learn new technology.\nLanguages:  Python, JavaScript, R\nDatabases:  SQL (MySQL, PostgreSQL)\nFrameworks: FastAPI, Dash(Plotly)\nOther skills:  AWS, Azure (cloud computing), Docker (containers),  Git (source control)\n\n\n\n\nNorwegian: Native  English: Speak and write fluently  Portuguese: Speak and write fluently\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHi! I am on a path for changing careers from Civil Engineering to Data Science. I am currently pursuing a MSc in Financial Engineering from World Quant University while also taking courses and pursuing own coding projects in data science. Check out my website to learn more about me and connect.\n\n\n\n\n\n\n\n\n  \n  \n  \n    2022  |  2017\n\nSenior Consulting Civil Engineer  Ramboll  1. Leading consulting projects for water engineering (pipelines, pumping stations, treatment plants, stormwater design, etc.) 2. Typically having the Discipline Lead role in projects 3. Tasks: Producing tender documents, reports, design review, project management, BIM/CAD design. 4. Example of IT project: Assisting in deploying prototype for project QA with Python web app (Flask framework)  Drammen, Norway\n\n    2017  |  2015\n\nProject Manager  Aqua Unique Norway  1. Tasks: Technical design in project, project management, contracts, supplier negotiations, marketing, strategy and recruitment.2. Development of Excel spreadsheets for project budgets, pricing models, supplier comparison, technical design, etc. 3. Assisting with peration of IT infrastructure (website, email, file server, backup, wiki, CRM system, etc)  Drammen, Norway\n\n    2015  |  2014\n\nConsulting Civil Engineer  Asplan Viak  Tasks: Water and wastewater treatment plant desig and BIM/CAD modelling. Material takeoff, P&ID, tender documents.  Oslo, Norway\n\n    2012\n\nEngineering Intern  COWI  Design of water distribution systems, and CAD modelling.  Oslo, Norway\n\n    2009\n\nDeveloper Intern  Silicon Labs formerly Energy Micro  C programming for development kit for energy efficient microcontroller.  Oslo, Norway\n\n  \n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n  \n  \n    Current  |  2022\n\nMSc in Financial Engineering  World Quant University  Courses: Financial Markets, Financial Data, Financial Econometrics\nHeavy focus on using Python for data and statistical analysis\n\n    2015  |  2010\n\nMSc in Civil and Environmental Engineering  Norwegian University of Science and Technology (NTNU)  Average Grade: A  Specialization: Water and Wastewater Engineering\nAdditional courses in Computer Science and Finance.  Trondheim, Norway\n\n    2014\n\nMSc Student exchange  Federal University of Santa Catarina  All student work and lectures in Portuguese  Florianopolis, Brazil\n\n    2013\n\nSpanish and Portuguese Language Studies  Independent learning  Web apps, audio courses, etc  South America\n\n    2009  |  2008\n\n1st year - MSc in Cybernetics and Robotics  Norwegian University of Science and Technology (NTNU)  Grade (1st yr): A  Trondheim, Norway\n\n  \n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n  \n  \n    2007\n\nWinner of Informatics Olympiad for High School Students  Norwegian Informatics Olympiad  Algorithmic Programming Competition for High School Students (C++ Programming)  Participated in Baltic Informatics Olympiad (BOI) and International Olympiad in Informatics (IOI).  Trondheim, Norway\n\n  \n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n  \n  \n    2014\n\nData Analysis and Statistical Inference - Certificate  Duke University (Coursera) \n\n    2013\n\nComputing for Data Analysis - Certificate  Johns Hopkins (Coursera) \n\n    2012\n\nMachine Learning - Certificate  Stanford (Coursera)\nResume made with 💜 and Quarto. Last updated on nov 14, 2022.  Code available on  GitHub. License: CC BY-SA 2.0."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Ivar Soares Urdalen",
     "section": "",
     "text": "Hi! Welcome to Ivar Soares Urdalen’s personal website.\nFeel free to check out my online CV.\nOr check out my portfolio of different projects."
+  },
+  {
+    "objectID": "notes/data-science/resources.html",
+    "href": "notes/data-science/resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Resources for data science"
+  },
+  {
+    "objectID": "notes/databases/financial-database.html",
+    "href": "notes/databases/financial-database.html",
+    "title": "Financial Database",
+    "section": "",
+    "text": "In this article we layout how to setup a financial database for prices for securities. It is inspired by Michael L. Halls-Moore book: Successful Algorithmic Trading.\nThe following tables in database is recommended:\nFor MySQL"
+  },
+  {
+    "objectID": "notes/databases/financial-database.html#schemas",
+    "href": "notes/databases/financial-database.html#schemas",
+    "title": "Financial Database",
+    "section": "Schemas",
+    "text": "Schemas\n\nDailyPrice:\n\n\n\nColumn\nType\nDescription\n\n\n\n\nid\ninteger\nPrimary Key\n\n\ndata_vendor_id\ninteger\nForeign Key\n\n\nsymbol_id\ninteger\nForeign Key\n\n\nprice_date\ndatetime\n\n\n\nopen\ndecimal\n\n\n\nhigh\ndecimal\n\n\n\nlow\ndecimal\n\n\n\nclose\ndecimal\n\n\n\nadj_close\ndecimal\n\n\n\nvolume\nbigint\n\n\n\n\n\n\nSymbol:\n\n\n\nColumn\nType\nDescription\n\n\n\n\nid\ninteger\nPrimary Key\n\n\nexchange_id\ninteger\nForeign Key\n\n\nticker\nvarchar\n\n\n\ninstrument\nvarchar\n\n\n\nname\nvarchar\n\n\n\nsector\nvarchar\n\n\n\ncurrency\nvarchar\n\n\n\ncreated_date\ndatetime\n\n\n\nlast_updated_date\ndatetime"
+  },
+  {
+    "objectID": "notes/databases/sql.html",
+    "href": "notes/databases/sql.html",
+    "title": "SQL",
+    "section": "",
+    "text": "Here I gather some of the common commands for SQL databases"
+  },
+  {
+    "objectID": "notes/databases/sql.html#mysql",
+    "href": "notes/databases/sql.html#mysql",
+    "title": "SQL",
+    "section": "MySQL",
+    "text": "MySQL\nCreate and use new database:\nCREATE DATABASE new_db;\nUSE DATABASE new_db;\nCreate a new user:\nCREATE USER 'new_user'@'localhost' IDENTIFIED BY 'new_password';\nSet privileges of the created user\nGRANT ALL PRIVILEGES ON new_db.* TO 'new_user'@'localhost';\nFLUSH PRIVILEGES;"
+  },
+  {
+    "objectID": "notes/databases/sql.html#postgresql",
+    "href": "notes/databases/sql.html#postgresql",
+    "title": "SQL",
+    "section": "PostgreSQL",
+    "text": "PostgreSQL\nCreate a new user:\nCREATE USER new_user WITH PASSWORD 'new_password';\nSet privileges of the created user\nGRANT ALL PRIVILEGES ON DATABASE new_db TO new_user;"
+  },
+  {
+    "objectID": "notes/index.html",
+    "href": "notes/index.html",
+    "title": "Notes",
+    "section": "",
+    "text": "Welcome to my open notebook! I will use this open notebook to record what I learn mostly regarding data science and financial engineering. It can also be called my Digital Garden or Second Brain."
+  },
+  {
+    "objectID": "notes/trading/strategies.html",
+    "href": "notes/trading/strategies.html",
+    "title": "Trading Strategies",
+    "section": "",
+    "text": "This note will describe the main categories of trading strategies.\nThere are 2 main trading strategies: Trend Following and Mean Reversion.\nThere are other strategies as well, but they will be elaborated on at a later stage."
+  },
+  {
+    "objectID": "notes/trading/strategies.html#trend-following",
+    "href": "notes/trading/strategies.html#trend-following",
+    "title": "Trading Strategies",
+    "section": "Trend Following",
+    "text": "Trend Following\nObjective: To enter when a new trend is established, and exit when the trend is over.\nIndicators:\n\nMoving averages (most common)\nTrendlines\nAverage Directional Index (measure trend strength)\nLinear Regression (forecast, slope)\nSupertrend\n\nChallenge: Maintain small losses for losing trades.\nSummary\nTrend following have a few great trades with larger profits, and small losses on a larger amount of trades. Can go through periods of poor performance."
+  },
+  {
+    "objectID": "notes/trading/strategies.html#mean-reversion",
+    "href": "notes/trading/strategies.html#mean-reversion",
+    "title": "Trading Strategies",
+    "section": "Mean Reversion",
+    "text": "Mean Reversion\nObjective: Assuming the price will revert back to a mean. Look to buy oversold, and sell overbought.\nIndicators:\n\nRelative Strength Index\nBollinger Bands\nDisparity Index (distance from moving average)\nStochastic oscillator\n\nChallenge: Mean reversion is exposed to left tail risk (huge infrequent losses). Can take a long time to recover from big losses.\nSummary: Mean reversion typically have small consistent profits, and low volatility in the strategy."
+  },
+  {
+    "objectID": "notes/trading/strategies.html#trend-following-vs-mean-reversion",
+    "href": "notes/trading/strategies.html#trend-following-vs-mean-reversion",
+    "title": "Trading Strategies",
+    "section": "Trend Following vs Mean Reversion",
+    "text": "Trend Following vs Mean Reversion\nComparison of key performance metrics:\n\n\n\nPerformance Metric\nTrend Following\nMean Reversion\n\n\n\n\nWin rate\nLow\nHigh\n\n\nTrade duration\nLong\nShort\n\n\nNumber of trades\nLow\nHigh\n\n\nProfit per trade\nHigher\nLow\n\n\nVolatility\nHigh\nLow"
+  },
+  {
+    "objectID": "site/blog/posts/2022-11-11-data-for-OSE/index.html",
+    "href": "site/blog/posts/2022-11-11-data-for-OSE/index.html",
+    "title": "Downloading data for Oslo Stock Exchange",
+    "section": "",
+    "text": "In this tutorial we are going to download stock price data for Oslo Stock Exchange and store it in a database.s"
+  },
+  {
+    "objectID": "site/portfolio/index.html",
+    "href": "site/portfolio/index.html",
+    "title": "Portfolio",
+    "section": "",
+    "text": "This is the start of my portfolio projects page."
   }
 ]
