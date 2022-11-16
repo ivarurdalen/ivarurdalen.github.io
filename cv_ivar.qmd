@@ -63,6 +63,12 @@ However, I believe that a developer should always be ready to pick up new skills
 
 **Norwegian:** Native <br> **English:** Speak and write fluently <br> **Portuguese:** Speak and write fluently
 
+### Hobbies
+
+<i class="fa-solid fa-language"></i> Language learning  
+<i class="fa-solid fa-earth-americas"></i> Travel  
+<i class="fa-solid fa-square-terminal"></i> Coding  
+
 <!-- ### Awards -->
 
 <!-- <i class="far fa-star"></i> [](https://www.rstudio.com/conference/) - Diversity Scholarship. -->
@@ -99,7 +105,15 @@ However, I believe that a developer should always be ready to pick up new skills
 col_br <- function(col){
     dplyr::if_else(
       !is.na(col) & col != "N/A|NA", 
-      paste0(col, ""),
+      paste0("<br> ", col, ""),
+      ""
+    )
+}
+
+col_br_key <- function(col){
+    dplyr::if_else(
+      !is.na(col) & col != "N/A|NA", 
+      paste0('', col, ""),
       ""
     )
 }
@@ -133,7 +147,7 @@ create_section <- function(cv_data, section_name){
     dplyr::mutate(
       main_text =
         glue::glue(
-          "**{title}** <br> {col_br(institution)} <br> {col_br(description_1)} {col_br_loc(loc)}"),
+          "**{title}** {col_br(institution)} {col_br(description_1)} {col_br_key(key_achievements)} {col_br_loc(loc)}"),
       .after = date
     ) |>
     dplyr::select(-c(start, end, section, title, institution, loc, description_1)) |>
@@ -147,8 +161,14 @@ create_section <- function(cv_data, section_name){
 <!-- Main content -->
 
 # Ivar Soares Urdalen
-
+Looking for roles in the Data Science space  
+  
 Hi! I am on a path for changing careers from Civil Engineering to Data Science. I am currently pursuing a [MSc in Financial Engineering](https://www.wqu.edu/programs/mscfe/) from [World Quant University](https://www.wqu.edu/) while also taking courses and pursuing own coding projects in data science. Check out my [website](https://ivarurdalen.github.io) to learn more about me and connect.
+
+## Key Skills
+- Passion for coding and technology
+- Fast learner (example: learned fluent Portuguese in < 6 months)
+- High working capacity (example: MSc at NTNU was completed during full time job as engineer)
 
 ## <i class="fa-solid fa-suitcase"></i> Work
 
@@ -160,6 +180,11 @@ create_section(cv, "working_experience")
 
 ```{r}
 create_section(cv, "education")
+```
+
+## <i class="fa-solid fa-code"></i> Personal Projects
+```{r}
+create_section(cv, "personal_projects")
 ```
 
 ## <i class="fa-solid fa-award"></i> Awards
