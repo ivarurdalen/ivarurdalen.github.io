@@ -52,10 +52,10 @@ cv <- googlesheets4::read_sheet(cv_url)
 Here is a list of technologies I am proficient in to apply in projects.
 However, I believe that a developer should always be ready to pick up new skills and learn new technology.
 
-**Languages:** <i class="fa-brands fa-python"></i> Python, JavaScript, R  
+**Languages:** <i class="fa-brands fa-python"></i> Python, <i class="fa-brands fa-square-js"></i> JavaScript, <i class="fa-brands fa-r-project"></i> R  
 **Databases:** <i class="fa-solid fa-database" aria-hidden="true"></i> SQL (MySQL, PostgreSQL)  
 **Frameworks:** FastAPI, Dash(Plotly)  
-**Other skills:** <i class="fa-solid fa-cloud"></i> AWS, Azure (cloud computing), Docker (containers), <i class="fa-brands fa-github"></i> Git (source control)
+**Other skills:** <i class="fa-solid fa-cloud"></i> AWS, Azure (cloud computing), <i class="fa-brands fa-docker"></i> Docker (containers), <i class="fa-brands fa-github"></i> Git (source control)
 
 <!-- <i class="fa-brands fa-python"></i> `Python` <br> <i class="fa-solid fa-database" aria-hidden="true"></i> `MySQL / PostgreSQL` <br> <i class="fa-solid fa-cloud"></i> `Cloud computing` <br> <i class="fa-brands fa-github"></i> `Git` <i class="fab fa-r-project"></i> `R` <br> <i class="fa fa-area-chart" aria-hidden="true"></i> `tidyverse` <br> <i class="fab fa-markdown"></i> `RMarkdown / Quarto` <br> <i class="fas fa-code-branch"></i> `Git` <br> <i class="fab fa-github"></i> `GitHub` <br> <i class="fab fa-markdown"></i> `Markdown` <br> <i class="fab fa-html5"></i> `HTML` <br> <i class="fab fa-css3-alt"></i> `CSS` <br> -->
 
@@ -67,7 +67,7 @@ However, I believe that a developer should always be ready to pick up new skills
 
 <i class="fa-solid fa-language"></i> Language learning  
 <i class="fa-solid fa-earth-americas"></i> Travel  
-<i class="fa-solid fa-square-terminal"></i> Coding  
+<i class="fa-solid fa-code"></i> Coding  
 
 <!-- ### Awards -->
 
@@ -113,7 +113,7 @@ col_br <- function(col){
 col_br_key <- function(col){
     dplyr::if_else(
       !is.na(col) & col != "N/A|NA", 
-      paste0('', col, ""),
+      paste0("<br> **Key achievements:** ", col, ""),
       ""
     )
 }
@@ -147,7 +147,8 @@ create_section <- function(cv_data, section_name){
     dplyr::mutate(
       main_text =
         glue::glue(
-          "**{title}** {col_br(institution)} {col_br(description_1)} {col_br_key(key_achievements)} {col_br_loc(loc)}"),
+          # "**{title}** {col_br(institution)} {col_br(description_1)} {col_br_key(key_achievements)} {col_br_loc(loc)}"),
+          "**{title}** {col_br(institution)} {col_br(description_1)} {col_br_loc(loc)}"),
       .after = date
     ) |>
     dplyr::select(-c(start, end, section, title, institution, loc, description_1)) |>
@@ -161,14 +162,14 @@ create_section <- function(cv_data, section_name){
 <!-- Main content -->
 
 # Ivar Soares Urdalen
-Looking for roles in the Data Science space  
+Looking for roles in the Data Science / Finance space  
   
-Hi! I am on a path for changing careers from Civil Engineering to Data Science. I am currently pursuing a [MSc in Financial Engineering](https://www.wqu.edu/programs/mscfe/) from [World Quant University](https://www.wqu.edu/) while also taking courses and pursuing own coding projects in data science. Check out my [website](https://ivarurdalen.github.io) to learn more about me and connect.
+Hi! I am on a path to make a career change from Civil Engineering to Data Science. I am currently pursuing a [MSc in Financial Engineering](https://www.wqu.edu/programs/mscfe/) from [World Quant University](https://www.wqu.edu/) while also taking courses/certifications and developing my own coding projects in data science. Check out my [website](https://ivarurdalen.github.io) to learn more about me and connect.
 
-## Key Skills
-- Passion for coding and technology
-- Fast learner (example: learned fluent Portuguese in < 6 months)
-- High working capacity (example: MSc at NTNU was completed during full time job as engineer)
+### Key Skills
+Excellent academic performance in analytical subjects (coding, math, statistics, etc.)  
+Fast learner (example: learned fluent Portuguese in < 6 months)  
+High working capacity (example: MSc at NTNU was completed during full time job as engineer)  
 
 ## <i class="fa-solid fa-suitcase"></i> Work
 
@@ -176,15 +177,15 @@ Hi! I am on a path for changing careers from Civil Engineering to Data Science. 
 create_section(cv, "working_experience")
 ```
 
+## <i class="fa-solid fa-code"></i> Personal Projects
+```{r}
+create_section(cv, "personal_projects")
+```
+
 ## <i class="fa-solid fa-graduation-cap"></i> Education
 
 ```{r}
 create_section(cv, "education")
-```
-
-## <i class="fa-solid fa-code"></i> Personal Projects
-```{r}
-create_section(cv, "personal_projects")
 ```
 
 ## <i class="fa-solid fa-award"></i> Awards
@@ -215,7 +216,7 @@ create_section(cv, "online_courses")
 
 <p class="footer">
 
-Resume made with 💜 and [Quarto](https://quarto.org/). Last updated on `r format.Date(Sys.Date(), "%b %d, %Y")`. <br> Code available on <i class="fa-brands fa-github"></i> [GitHub](https://github.com/ivarurdalen/cv/blob/main/docs/index.qmd). <br>License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).
+Resume made with 💜 and [Quarto](https://quarto.org/). Last updated on `r format.Date(Sys.Date(), "%b %d, %Y")`. <br> Code available on <i class="fa-brands fa-github"></i> [GitHub](https://github.com/ivarurdalen/). <br>License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).
 
 </p>
 

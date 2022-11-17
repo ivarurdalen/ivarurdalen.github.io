@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="A collection of different projects.">
+<meta name="description" content="A collection of different personal projects.">
 
 <title>Ivar Soares Urdalen - Data Science - Portfolio</title>
 <style>
@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -59,11 +61,41 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-projects .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-category','listing-description','listing-tiles',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-category","listing-description","listing-tiles"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-projects'] = new List('listing-projects', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="Ivar Soares Urdalen - Data Science - Portfolio">
-<meta property="og:description" content="A collection of different projects.">
+<meta property="og:description" content="A collection of different personal projects.">
 <meta property="og:site-name" content="Ivar Soares Urdalen - Data Science">
 </head>
 
@@ -148,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    <p>A collection of different projects.</p>
+    <p>A collection of different personal projects.</p>
   </div>
 </div>
 
@@ -163,7 +195,60 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This is the start of my portfolio projects page.</p>
+<div id="listing-projects" class="quarto-listing quarto-listing-container-custom">
+<h2 class="anchored">Finance</h2>
+<p>My projects in the finance domain
+</p>
+<!-- <div class="list grid" style="column-gap: 10px;"> -->
+<!-- <div class="list grid"> -->
+  <!-- <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" data-index='0'> -->
+<!--   <div class="card border-0 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" data-index='1'>
+    <div class="card-header py-1 px-2 border-bottom border-1 bg-light">
+      <a href="https://github.com/ivarurdalen/stockanalysis">
+        <img src="projects/stock-analysis.jpeg" alt="Statistical and technical analysis of stocks. &lt;br&gt; Return distribution, volatility, correlation, comparison, etc." class="card-img-top"/>
+        <img src="projects/stock-analysis.jpeg" alt="Statistical and technical analysis of stocks. &lt;br&gt; Return distribution, volatility, correlation, comparison, etc."/>
+      </a>
+      <div class="card-body py-1 px-2 bg-light">
+      <small class="card-title text-nowrap inline-block">
+        <a href="https://github.com/ivarurdalen/stockanalysis" class="listing-title">Stock Analysis Dashboard</a> <span class="text-muted listing-subtitle">Technology: Python, Dash/Plotly, SQlite</span>
+      </small>
+    </div>
+  </div> -->
+  <!-- <div class="card mb-3" style="max-width: 540px;" data-index='2'> -->
+  <div class="card mb-3" data-index="3">
+    <!-- <div class="row g-0"> -->
+    <div class="d-flex flex-row">
+      <!-- <div class="col-6"> -->
+      <div class="p-2">
+      <!-- <div class="col-sm-6 col-md-8"> -->
+        <img src="projects/stock-analysis.jpeg" class="img-fluid rounded-start" alt="Statistical and technical analysis of stocks. <br> Return distribution, volatility, correlation, comparison, etc.">
+      </div>
+      <!-- <div class="col-6"> -->
+      <div class="p-2">
+      <!-- <div class="col-6 col-md-4"> -->
+        <div class="card-body">
+          <h5 class="card-title listing-title anchored"><a href="https://github.com/ivarurdalen/stockanalysis">Stock Analysis Dashboard</a></h5>
+          <p class="card-text"><small class="text-muted listing-subtitle">Technology: Python, Dash/Plotly, SQlite</small></p>
+          <p class="card-text">Statistical and technical analysis of stocks. <br> Return distribution, volatility, correlation, comparison, etc.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--   <div class="card">
+    <img src="projects/stock-analysis.jpeg" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title listing-title">Stock Analysis Dashboard</h5>
+      <p class="card-text"><small class="text-muted listing-subtitle">Technology: Python, Dash/Plotly, SQlite</small></p>
+      <p class="card-text">Statistical and technical analysis of stocks. <br> Return distribution, volatility, correlation, comparison, etc.</p>
+      <a href="https://github.com/ivarurdalen/stockanalysis" class="btn btn-primary">GitHub repository</a>
+    </div>
+  </div> -->
+<!-- </div> -->
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+
 
 
 
