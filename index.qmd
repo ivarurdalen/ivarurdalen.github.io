@@ -19,11 +19,19 @@ about:
 
 ---
 
-Hi! Welcome to Ivar Soares Urdalen's personal website.  
+### Hi there, I am Ivar Soares Urdalen 👋
+I am currently changing career from Civil Engineering to Financial Engineering / Data Science / Quantitative Developer.  
+Feel free to [check out my online CV](cv_ivar.html) if interested.   
+Or check out my [portfolio of different projects](site/portfolio/index.qmd).  
 
-Feel free to [check out my online CV](cv_ivar.html).  
+### 💬 You can connect with me at  
+[![](https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ivarurdalen)
 
-Or check out my [portfolio of different projects](site/portfolio/index.qmd).
+### Personal info
+
+🎓 I'm currently pursuing an [MSc in Financial Engineering](https://www.wqu.edu/programs/mscfe/) at [World Quant University](https://www.wqu.edu/)
+
+🚀 On [GitHub](https://github.com/ivarurdalen) I work on personal projects to develop my skills as a Financial Engineer / Data Scientist and Quantitative Developer.
 
 <!-- ----  
 

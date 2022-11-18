@@ -36,7 +36,7 @@ b, strong {
     font-weight: bolder;
 }
 
-p, .gt_table, .gt_row{
+ul, p, .gt_table, .gt_row{
   color: #626262;
   font-size: .825rem;
 }
