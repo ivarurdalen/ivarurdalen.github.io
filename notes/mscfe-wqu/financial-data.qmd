@@ -3,6 +3,9 @@ title: "Financial Data"
 format: html
 ---
 
+
+
+
 This course introduces students to financial data: the source of energy for financial models.
 Students will learn how to apply Python to properly select, import, filter, structure, visualize,
 summarize, and analyze financial data for interest rates, equities, cryptocurrencies, ETFs,

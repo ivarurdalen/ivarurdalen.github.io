@@ -5,7 +5,16 @@ format: html
 I am currently studying for this masters program at World Quant University. If you are curious about what is the syllabus and content of the masters, here is a summary from the student catalog.
 
 
-### 560: Financial Markets
+### 560 Financial Markets
+
+1. Credit Risk and Financing
+2. Return and Volatility
+3. Correlation
+4. Leverage and Non-Linearity
+5. Liquidity and Regulation
+6. Model Failure and Crisis
+7. GWP completion
+
 In this pilot course for the program, students are introduced to the world of professional
 finance: markets, products, participants, and regulation. The activities within financial markets will
 be discussed, including trading, financing, brokering, pricing, hedging, optimizing, and managing
@@ -17,7 +26,7 @@ develop models for financial engineering. No background in finance is required.
 <!-- This course will look at the different risks such as:
 * Statistical risk: Volatility and Correlation -->
 
-### 600: Financial Data
+### 600 Financial Data
 This course introduces students to financial data: the source of energy for financial models.
 Students will learn how to apply Python to properly select, import, filter, structure, visualize,
 summarize, and analyze financial data for interest rates, equities, cryptocurrencies, ETFs,
