@@ -169,7 +169,7 @@ create_section <- function(cv_data, section_name){
 <!-- Main content -->
 
 # Ivar Soares Urdalen
-Looking for roles in the Data Science / Finance space  
+Looking for roles in the Data Engineering / Data Science / Finance space  
   
 Hi! I am on a path to make a career change from Civil Engineering to Data Science. I am currently pursuing a [MSc in Financial Engineering](https://www.wqu.edu/programs/mscfe/) from [World Quant University](https://www.wqu.edu/) while also taking courses/certifications and developing my own coding projects in data science. Check out my [website](https://ivarurdalen.github.io) to learn more about me and connect.
 

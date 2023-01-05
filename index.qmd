@@ -20,7 +20,7 @@ about:
 ---
 
 ### Hi there, I am Ivar Soares Urdalen 👋
-I am currently changing career from Civil Engineering to Financial Engineering / Data Science / Quantitative Developer.  
+I am currently changing career from Civil Engineering to Data Science / Data Engineering with a focus on Finance space.  
 Feel free to [check out my online CV](cv_ivar.html) if interested.   
 Or check out my [portfolio of different projects](site/portfolio/index.qmd).  
 
