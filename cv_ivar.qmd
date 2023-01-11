@@ -61,10 +61,11 @@ cv <- googlesheets4::read_sheet(cv_url)
 <!-- Here is a list of technologies I am proficient in to apply in projects.
 However, I believe that a developer should always be ready to pick up new skills and learn new technology. -->
 
-**Languages:** <i class="fa-brands fa-python"></i> Python, <i class="fa-brands fa-square-js"></i> JavaScript, <i class="fa-brands fa-r-project"></i> R  
-**Databases:** <i class="fa-solid fa-database" aria-hidden="true"></i> SQL (MySQL, PostgreSQL)  
+**Languages:** <i class="fa-brands fa-python"></i> Python, <i class="fa-brands fa-square-js"></i> JavaScript, <i class="fa-brands fa-r-project"></i> R, C++  
+**Databases:** <i class="fa-solid fa-database" aria-hidden="true"></i> SQL (MySQL, PostgreSQL, BigQuery, Snowflake)  
 **Frameworks:** FastAPI, Dash(Plotly)  
-**Other skills:** <i class="fa-solid fa-cloud"></i> AWS, Azure (cloud computing), <i class="fa-brands fa-docker"></i> Docker (containers), <i class="fa-brands fa-github"></i> Git (source control)
+**Cloud computing:** <i class="fa-solid fa-cloud"></i> AWS, Azure, GCP <i class="fa-brands fa-docker"></i> Docker, Kubernetes  
+**DevOps:** CI/CD, <i class="fa-brands fa-github"></i> GitHub
 
 ### Languages
 
