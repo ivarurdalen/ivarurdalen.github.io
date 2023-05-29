@@ -1,0 +1,17 @@
+---
+title: "Portfolio"
+format: html
+page-layout: full
+# format:
+#   html:
+#     toc: false
+listing:
+  - id: projects
+    template: projects.ejs
+    contents: projects.yml
+description: |
+  A collection of different personal projects.
+---
+
+::: {#projects}
+:::

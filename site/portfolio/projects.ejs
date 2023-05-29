@@ -1,0 +1,75 @@
+
+```{=html}
+
+<% for (const item of items) { %>
+
+<h2><%- item.category %></h2>
+
+<p><%- item.description %></p>
+
+<!-- <div class="list grid" style="column-gap: 10px;"> -->
+<!-- <div class="list grid"> -->
+
+<% for (const tile of item.tiles) { %>
+  <!-- <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" <%= metadataAttrs(tile) %>> -->
+<!--   <div class="card border-0 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" <%= metadataAttrs(tile) %>>
+    <div class="card-header py-1 px-2 border-bottom border-1 bg-light">
+      <a href="<%- tile.href %>">
+        <img src="<%- tile.thumbnail %>" alt="<%- tile.description %>" class="card-img-top"/>
+        <img src="<%- tile.thumbnail %>" alt="<%- tile.description %>"/>
+      </a>
+      <div class="card-body py-1 px-2 bg-light">
+      <small class="card-title text-nowrap inline-block">
+        <a href="<%- tile.href %>" class="listing-title"><%= tile.title %></a> <span class="text-muted listing-subtitle"><%= tile.subtitle %></span>
+      </small>
+      <% if (tile.code) { %> 
+      <a href="<%- tile.code %>" title="View source code" 
+        class="source-code card-text float-end inline-block">
+        <i class="bi-code-slash"></i>
+      </a>
+      <% } %> 
+    </div>
+
+    
+    <% if (tile.publicationdate) { %> 
+      <b class="listing-publicationdate"><%= tile.publicationdate %></b>
+    <% } %>
+    
+  </div> -->
+  <!-- <div class="card mb-3" style="max-width: 540px;" <%= metadataAttrs(tile) %>> -->
+  <div class="card mb-3" <%= metadataAttrs(tile) %>>
+    <div class="grid">
+    <!-- <div class="row g-0"> -->
+    <!-- <div class="d-flex flex-row"> -->
+      <div class="g-col-4">
+      <!-- <div class="p-2"> -->
+      <!-- <div class="col-sm-6 col-md-8"> -->
+        <img src="<%- tile.thumbnail %>" class="img-fluid rounded-start" alt="<%- tile.description %>" />
+      </div>
+      <div class="g-col-8">
+      <!-- <div class="p-2"> -->
+      <!-- <div class="col-6 col-md-4"> -->
+        <div class="card-body">
+          <h5 class="card-title listing-title"><a href="<%- tile.href %>"><%= tile.title %></a></h5>
+          <p class="card-text"><small class="text-muted listing-subtitle"><%= tile.subtitle %></small></p>
+          <p class="card-text"><%= tile.description %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--   <div class="card">
+    <img src="<%- tile.thumbnail %>" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title listing-title"><%= tile.title %></h5>
+      <p class="card-text"><small class="text-muted listing-subtitle"><%= tile.subtitle %></small></p>
+      <p class="card-text"><%= tile.description %></p>
+      <a href="<%- tile.href %>" class="btn btn-primary">GitHub repository</a>
+    </div>
+  </div> -->
+<% } %>
+
+<!-- </div> -->
+
+<% } %>
+
+```
