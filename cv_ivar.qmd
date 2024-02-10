@@ -2,13 +2,12 @@
 title: ""
 format: 
   html:
-    theme: journal
     css: cv.css
     page-layout: article
     output-file: cv_ivar.html
     standalone: true
     embed-resources: true
-    date: 11.11.2022
+title-block-style: none
 editor: visual
 knitr:
   opts_chunk: 
@@ -27,87 +26,39 @@ cv <- googlesheets4::read_sheet(cv_url)
 
 <!-- Sidebar -->
 
-<!-- :::: columns -->
-<!-- ::: {.column .aside width="25%"} -->
-<!-- ::: {.column-margin} -->
 ::: {.grid}
 
 ::: {.g-col-4}
-<center>[![](profile_160.jpg)](https://www.ivarurdalen.com)</center>
 
-</a>
+<center>[![](profile_160.jpg){.rounded}](https://www.ivarurdalen.com)</center>
 
 ### Contact
-<!-- <center> -->
 <span style="font-size: 1.5em;"> <a href='https://ivarurdalen.github.io' target='_blank'><i class="fa fa-home"></i></a> <a href='https://github.com/ivarurdalen' target='_blank'><i class="fa-brands fa-github"></i></a> <a href='mailto:ivar.urdalen@gmail.com'><i class="fa fa-envelope"></i></a> <a href='https://www.linkedin.com/in/ivarurdalen/' target='_blank'><i class="fa-brands fa-linkedin"></i></a>
-<!-- </center> -->
 </span>
-
-<!-- ### Teaching -->
-
-<!-- <i class="fas fa-chalkboard-teacher"></i> [`tidyverse` certified trainer by RStudio](https://education.rstudio.com/trainers/people/milz+beatriz/). <br> <i class="fas fa-chalkboard-teacher"></i> [The Carpentries instructor](https://carpentries.org/). -->
-
 
 ### Key Skills
 - Excellent academic performance in analytical subjects (coding, math, statistics, etc.)  
 - Fast learner (example: learned fluent Portuguese in < 6 months)  
 - High working capacity (example: MSc at NTNU was completed during full time job as engineer)  
 
-
-
-<!-- <i class="fa-brands fa-python"></i> `Python` <br> <i class="fa-solid fa-database" aria-hidden="true"></i> `MySQL / PostgreSQL` <br> <i class="fa-solid fa-cloud"></i> `Cloud computing` <br> <i class="fa-brands fa-github"></i> `Git` <i class="fab fa-r-project"></i> `R` <br> <i class="fa fa-area-chart" aria-hidden="true"></i> `tidyverse` <br> <i class="fab fa-markdown"></i> `RMarkdown / Quarto` <br> <i class="fas fa-code-branch"></i> `Git` <br> <i class="fab fa-github"></i> `GitHub` <br> <i class="fab fa-markdown"></i> `Markdown` <br> <i class="fab fa-html5"></i> `HTML` <br> <i class="fab fa-css3-alt"></i> `CSS` <br> -->
 ### Technical skills
 
 <!-- Here is a list of technologies I am proficient in to apply in projects.
 However, I believe that a developer should always be ready to pick up new skills and learn new technology. -->
 
-**Languages:** <i class="fa-brands fa-python"></i> Python, <i class="fa-brands fa-square-js"></i> JavaScript, <i class="fa-brands fa-r-project"></i> R, C++  
-**Databases:** <i class="fa-solid fa-database" aria-hidden="true"></i> SQL (MySQL, PostgreSQL, BigQuery, Snowflake)  
-**Frameworks:** FastAPI, Dash(Plotly)  
-**Cloud computing:** <i class="fa-solid fa-cloud"></i> AWS, Azure, GCP <i class="fa-brands fa-docker"></i> Docker, Kubernetes  
+**Languages:** <i class="fa-brands fa-python"></i> Python, <i class="fa-brands fa-square-js"></i> JavaScript, C++  
+**Databases:** <i class="fa-solid fa-database" aria-hidden="true"></i> SQL, <i class="fa-solid fa-snowflake"></i> Snowflake  
+**Frameworks:** FastAPI, Panel(Holoviz)  
+**Cloud computing:** <i class="fa-solid fa-cloud"></i> AWS, GCP <i class="fa-brands fa-docker"></i> Docker, Kubernetes  
 **DevOps:** CI/CD, <i class="fa-brands fa-github"></i> GitHub
 
 ### Languages
 
 **Norwegian:** Native <br> **English:** Speak and write fluently <br> **Portuguese:** Speak and write fluently
 
-### Hobbies
-
-<i class="fa-solid fa-language"></i> Language learning  
-<i class="fa-solid fa-earth-americas"></i> Travel  
-<i class="fa-solid fa-code"></i> Coding  
-
-<!-- ### Awards -->
-
-<!-- <i class="far fa-star"></i> [](https://www.rstudio.com/conference/) - Diversity Scholarship. -->
-
-<!-- <i class="far fa-star"></i> [FAPESP](https://fapesp.br/). Doctorate Scholarship - 2019-2021. -->
-
-<!-- <i class="far fa-star"></i> [useR! 2019](https://user2019.r-project.org/) - Diversity Scholarship. -->
-
-<!-- <i class="far fa-star"></i> [LatinR 2019](https://latin-r.com/) - Diversity Scholarship. -->
-
-<!-- ### Software review -->
-
-<!-- <i class="fas fa-box-open"></i> [R OpenSci](https://ropensci.org/): [reviews available here](https://github.com/beatrizmilz/ropensci_reviews#ropensci-reviews). -->
-
-<!-- ### Software -->
-
-<!-- <i class="fas fa-box-open"></i> [Package {dados} - Available on CRAN](https://cienciadedatos.github.io/dados/) - Co-Author. -->
-
-<!-- <br> -->
-
-<!-- <i class="fas fa-box-open"></i> [Package {mananciais}](https://beatrizmilz.github.io/mananciais/) - Author, maintainer. -->
-
 :::
 
-<!-- ::: {.column width="5%"} -->
-<!-- ::: -->
-
-<!-- ::: {.column width="70%"} -->
 ::: {.g-col-8}
-<!-- ::: {.column-body} -->
-<!-- Functions -->
 
 ```{r}
 col_br <- function(col){
@@ -155,24 +106,41 @@ create_section <- function(cv_data, section_name){
     dplyr::mutate(
       main_text =
         glue::glue(
-          # "**{title}** {col_br(institution)} {col_br(description_1)} {col_br_key(key_achievements)} {col_br_loc(loc)}"),
           "**{title}** {col_no_br(institution)} {col_no_br(loc)} {col_br(description_1)}"),
       .after = date
     ) |>
     dplyr::select(-c(start, end, section, title, institution, loc, description_1)) |>
-    gt::gt() |>
+    gt::gt(id = 'table_id') |>
+    gt::cols_width(
+        date ~ gt::pct(15)
+    ) |>
     gt::fmt_markdown(columns = c(date, main_text)) |> 
-    gt::tab_options(column_labels.hidden = TRUE, table.width = gt::pct(100)) |> 
-    gt::cols_align(align = "left", columns = main_text)
+    gt::tab_options(column_labels.hidden = TRUE,
+      table.width = gt::pct(100),
+      quarto.disable_processing = TRUE,
+      quarto.use_bootstrap = TRUE
+    ) |> 
+    gt::cols_align(align = "left", columns = main_text) |>
+    gt::opt_css(
+      '
+      #table_id .gt_table {
+        font-family: var(--bs-body-font-family);
+      }
+      '
+    )
 }
 ```
 
 <!-- Main content -->
 
 # Ivar Soares Urdalen
-Looking for roles in the Data Engineering / Data Science / Finance space  
+
+Currently working as a Data Engineer in the [Alternative Data](https://en.wikipedia.org/wiki/Alternative_data_(finance)) space for finance.  
   
-Hi! I am on a path to make a career change from Civil Engineering to Data Science. I am currently pursuing a [MSc in Financial Engineering](https://www.wqu.edu/programs/mscfe/) from [World Quant University](https://www.wqu.edu/) while also taking courses/certifications and developing my own coding projects in data science. Check out my [website](https://ivarurdalen.github.io) to learn more about me and connect.
+In addition to work, I am currently pursuing a [MSc in Financial Engineering](https://www.wqu.edu/programs/mscfe/)
+from [World Quant University](https://www.wqu.edu/) while also taking courses/certifications
+and developing my own coding projects in intersection of data engineering and finance.
+Check out my [website](https://ivarurdalen.github.io) to learn more about me and connect.
 
 
 
@@ -209,14 +177,6 @@ create_section(cv, "awards")
 create_section(cv, "online_courses")
 ```
 
-
-<!-- ## <i class="fa-solid fa-person-chalkboard"></i> Selected teaching experience -->
-
-<!-- ```{r} -->
-
-<!-- create_section(cv, "teaching_experience") -->
-
-<!-- ``` -->
 :::
 
 :::

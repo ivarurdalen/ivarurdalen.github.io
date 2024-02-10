@@ -1,94 +1,62 @@
 [
   {
-    "objectID": "cv_ivar.html",
-    "href": "cv_ivar.html",
-    "title": "Ivar Soares Urdalen - Data Science",
+    "objectID": "site/portfolio/index.html",
+    "href": "site/portfolio/index.html",
+    "title": "Portfolio",
     "section": "",
-    "text": "Excellent academic performance in analytical subjects (coding, math, statistics, etc.)\n\nFast learner (example: learned fluent Portuguese in < 6 months)\n\nHigh working capacity (example: MSc at NTNU was completed during full time job as engineer)\n\n\n\n\n\n\nLanguages:  Python,  JavaScript,  R, C++\nDatabases:  SQL (MySQL, PostgreSQL, BigQuery, Snowflake)\nFrameworks: FastAPI, Dash(Plotly)\nCloud computing:  AWS, Azure, GCP  Docker, Kubernetes\nDevOps: CI/CD,  GitHub\n\n\n\nNorwegian: Native  English: Speak and write fluently  Portuguese: Speak and write fluently\n\n\n\n Language learning\n Travel\n Coding\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLooking for roles in the Data Engineering / Data Science / Finance space\nHi! I am on a path to make a career change from Civil Engineering to Data Science. I am currently pursuing a MSc in Financial Engineering from World Quant University while also taking courses/certifications and developing my own coding projects in data science. Check out my website to learn more about me and connect.\n\n\n\n\n\n\n\n\n  \n  \n  \n    Current  |  2022\n\nPersonal projects | Self employed   Data Engineering studies and personal projects\n\n    2022  |  2017\n\nSenior Consulting Civil Engineer | Ramboll | Drammen, Norway  1. Leading consulting projects for water engineering (pipelines, pumping stations, treatment plants, stormwater design, etc.) 2. Typically having the Discipline Lead role in projects 3. Tasks: Producing tender documents, reports, design review, project management, BIM/CAD design. 4. Example of IT project: Assisting in deploying prototype for project QA with Python web app (Flask framework)\n\n    2017  |  2015\n\nProject Manager | Aqua Unique Norway | Drammen, Norway  1. Tasks: Technical design in project, project management, contracts, supplier negotiations, marketing, strategy and recruitment.2. Development of Excel spreadsheets for project budgets, pricing models, supplier comparison, technical design, etc. 3. Assisting with operation of IT infrastructure (website, email, file server, backup, wiki, CRM system, etc)\n\n    2015  |  2014\n\nConsulting Civil Engineer | Asplan Viak | Oslo, Norway  Tasks: Water and wastewater treatment plant design and BIM/CAD modelling. Material takeoff, P&ID, tender documents.\n\n    2012\n\nEngineering Intern | COWI | Oslo, Norway  Design of water distribution systems, and CAD modelling.\n\n    2009\n\nDeveloper Intern | Silicon Labs formerly Energy Micro | Oslo, Norway  C programming for development kit for energy efficient microcontroller.\n\n  \n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n  \n  \n    Current  |  2022\n\nStock Analysis Dashboard    Technology: Python, Plotly/Dash, SQlite  Created a dashboard for statistical and technical analysis of stocks.\n\n  \n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n  \n  \n    Current  |  2022\n\nMSc in Financial Engineering | World Quant University   Courses: Financial Markets, Financial Data, Financial Econometrics\nHeavy focus on using Python for data and statistical analysis\n\n    2015  |  2010\n\nMSc in Civil and Environmental Engineering | Norwegian University of Science and Technology (NTNU) | Trondheim, Norway  Average Grade: A \nAdditional courses: Algorithms and Data Structures, Finance, Business Economics, C++ Programming\n\n    2014\n\nMSc Student exchange | Federal University of Santa Catarina | Florianopolis, Brazil  All student work and lectures in Portuguese\n\n    2013\n\nSpanish and Portuguese Language Studies | Independent learning | South America  Web apps, audio courses, etc\n\n    2009  |  2008\n\n1st year - MSc in Cybernetics and Robotics | Norwegian University of Science and Technology (NTNU) | Trondheim, Norway  Grade (1st yr): A\n\n  \n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n  \n  \n    2007\n\nWinner of Informatics Olympiad for High School Students | Norwegian Informatics Olympiad | Trondheim, Norway  Algorithmic Programming Competition for High School Students (C++ Programming)  Participated in Baltic Informatics Olympiad (BOI) and International Olympiad in Informatics (IOI).\n\n  \n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n  \n  \n    Current  |  2023\n\nCloud Data Engineer Professional Certificate | Google (Coursera)   Dataflow (Apache Beam), Dataproc (Spark/Hadoop), Data Fusion, Cloud Composer (Airflow), BigQuery, Streaming (Kafka). Preparation for taking the certification exam.\n\n    Current  |  2022\n\nApplied Data Science Lab | World Quant University   Practical application of Python for Data Science (pandas, scikit-learn, model building, etc)\n\n    2022\n\nData Engineering Foundations - Certificate | LinkedIn Learning   ETL pipelines, Hive, Hadoop, Spark, and Airflow\n\n    2014\n\nData Analysis and Statistical Inference - Certificate | Duke University (Coursera)   Statistics, Inference of Numerical and Categorical variables, Multiple Linear Regression\n\n    2013\n\nComputing for Data Analysis - Certificate | Johns Hopkins (Coursera)   Intro course for R\n\n    2012\n\nMachine Learning - Certificate | Stanford (Coursera)   Logistic Regression, Neural Networks, Support Vector Machines, K-means clustering, Principal Component Analysis\nThis data driven CV is made with Quarto and Google Sheets. Last updated on jan 11, 2023.  Code available on  GitHub."
+    "text": "Finance\n\nMy projects in the finance domain\n\n\n\n\n\n  \n\n  \n  \n    \n    \n    \n      \n      \n      \n        \n      \n      \n      \n      \n        \n          Stock Analysis Dashboard\n          Technology: Python, Dash/Plotly, SQlite\n          Statistical and technical analysis of stocks.  Return distribution, volatility, correlation, comparison, etc.\n        \n      \n    \n  \n\n\n  \n\n  \n  \n    \n    \n    \n      \n      \n      \n        \n      \n      \n      \n      \n        \n          TradeManager\n          Technology: Python (Backend: FastAPI / SQL database, Frontend: Jinja).\n          Trading Journal web app for managing active trades and calculating statistics on closed trades.\n        \n      \n    \n  \n\n\n  \n\n  \n  \n    \n    \n    \n      \n      \n      \n        \n      \n      \n      \n      \n        \n          AlertManager\n          Technology: Python (Backend FastAPI / SQL database), Deployed on Cloud provider\n          Alerts from TradingView as webhooks is stored in SQL database for analysis and visualization. Live trading on alerts not implemented yet.\n        \n      \n    \n  \n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Portfolio"
+    ]
   },
   {
     "objectID": "index.html",
     "href": "index.html",
+    "title": "Ivar Soares Urdalen - Financial Data",
+    "section": "",
+    "text": "🏢 Data Engineer at Exabel\n GitHub\n\n\n\nHi there, I am Ivar Soares Urdalen 👋\nI currently work as a Data Engineer at Exabel\nFeel free to check out my online CV if interested.\nOr check out my portfolio of different projects.\n\n\n💬 You can connect with me at\n\n\n\nPersonal info\n🎓 I’m currently pursuing an MSc in Financial Engineering at World Quant University\n🚀 On GitHub I work on personal projects to develop my skills as a Financial Engineer / Data Scientist and Quantitative Developer."
+  },
+  {
+    "objectID": "cv_ivar.html",
+    "href": "cv_ivar.html",
     "title": "Ivar Soares Urdalen",
     "section": "",
-    "text": "Hi there, I am Ivar Soares Urdalen 👋\nI am currently changing career from Civil Engineering to Data Science / Data Engineering with a focus on Finance space.\nFeel free to check out my online CV if interested.\nOr check out my portfolio of different projects.\n\n\n💬 You can connect with me at\n\n\n\n\n\n\n\nPersonal info\n🎓 I’m currently pursuing an MSc in Financial Engineering at World Quant University\n🚀 On GitHub I work on personal projects to develop my skills as a Financial Engineer / Data Scientist and Quantitative Developer."
+    "text": "Excellent academic performance in analytical subjects (coding, math, statistics, etc.)\n\nFast learner (example: learned fluent Portuguese in &lt; 6 months)\n\nHigh working capacity (example: MSc at NTNU was completed during full time job as engineer)\n\n\n\n\n\nLanguages:  Python,  JavaScript, C++\nDatabases:  SQL,  Snowflake\nFrameworks: FastAPI, Panel(Holoviz)\nCloud computing:  AWS, GCP  Docker, Kubernetes\nDevOps: CI/CD,  GitHub\n\n\n\nNorwegian: Native  English: Speak and write fluently  Portuguese: Speak and write fluently\n\n\n\n\n\n\nCurrently working as a Data Engineer in the Alternative Data space for finance.\nIn addition to work, I am currently pursuing a MSc in Financial Engineering from World Quant University while also taking courses/certifications and developing my own coding projects in intersection of data engineering and finance. Check out my website to learn more about me and connect.\n\n\n\n\n\n\n\n  \n    \n    \n  \n  \n  \n    Current  |  2023\n\nData Engineer | Exabel | Oslo, Norway  1. Developing and maintaining data pipelines.\n2. Python backend development\nTech: GCP, Kubernetes, Python, SQL, Snowflake, etc.\n\n    2022  |  2017\n\nSenior Consulting Civil Engineer | Ramboll | Drammen, Norway  1. Leading consulting projects for water engineering (pipelines, pumping stations, treatment plants, stormwater design, etc.) 2. Typically having the Discipline Lead role in projects 3. Tasks: Producing tender documents, reports, design review, project management, BIM/CAD design. 4. Example of IT project: Assisting in deploying prototype for project QA with Python web app (Flask framework)\n\n    2017  |  2015\n\nProject Manager | Aqua Unique Norway | Drammen, Norway  1. Tasks: Technical design in project, project management, contracts, supplier negotiations, marketing, strategy and recruitment.2. Development of Excel spreadsheets for project budgets, pricing models, supplier comparison, technical design, etc. 3. Assisting with operation of IT infrastructure (website, email, file server, backup, wiki, CRM system, etc)\n\n    2015  |  2014\n\nConsulting Civil Engineer | Asplan Viak | Oslo, Norway  Tasks: Water and wastewater treatment plant design and BIM/CAD modelling. Material takeoff, P&ID, tender documents.\n\n    2012\n\nEngineering Intern | COWI | Oslo, Norway  Design of water distribution systems, and CAD modelling.\n\n    2009\n\nDeveloper Intern | Silicon Labs formerly Energy Micro | Oslo, Norway  C programming for development kit for energy efficient microcontroller.\n\n  \n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    \n  \n  \n  \n    Current  |  2022\n\nStock Analysis Dashboard    Technology: Python, Plotly/Dash, SQlite  Created a dashboard for statistical and technical analysis of stocks.\n\n  \n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    \n  \n  \n  \n    Current  |  2022\n\nMSc in Financial Engineering | World Quant University   Courses: Financial Markets, Financial Data, Financial Econometrics, Derivative Pricing, Stochastic Modeling, Machine Learning, Deep Learning, Portfolio Management, Risk Management\nHeavy focus on using Python for data analysis\n\n    2015  |  2010\n\nMSc in Civil and Environmental Engineering | Norwegian University of Science and Technology (NTNU) | Trondheim, Norway  Average Grade: A \nAdditional courses: Algorithms and Data Structures, Finance, Business Economics, C++ Programming\n\n    2014\n\nMSc Student exchange - Civil Engineering | Federal University of Santa Catarina | Florianopolis, Brazil  All student work and lectures in Portuguese\n\n    2013\n\nSpanish and Portuguese Language Studies | Independent learning | South America  Web apps, audio courses, etc\n\n    2009  |  2008\n\n1st year - MSc in Cybernetics and Robotics | Norwegian University of Science and Technology (NTNU) | Trondheim, Norway  Grade (1st yr): A\n\n  \n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    \n  \n  \n  \n    2007\n\nWinner of Informatics Olympiad for High School Students | Norwegian Informatics Olympiad | Trondheim, Norway  Algorithmic Programming Competition for High School Students (C++ Programming)  Participated in Baltic Informatics Olympiad (BOI) and International Olympiad in Informatics (IOI).\n\n  \n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    \n  \n  \n  \n    Current  |  2023\n\nCloud Data Engineer Professional Certificate | Google (Coursera)   Dataflow (Apache Beam), Dataproc (Spark/Hadoop), Data Fusion, Cloud Composer (Airflow), BigQuery, Streaming (Kafka). Preparation for taking the certification exam.\n\n    Current  |  2022\n\nApplied Data Science Lab | World Quant University   Practical application of Python for Data Science (pandas, scikit-learn, model building, etc)\n\n    2022\n\nData Engineering Foundations - Certificate | LinkedIn Learning   ETL pipelines, Hive, Hadoop, Spark, and Airflow\n\n    2014\n\nData Analysis and Statistical Inference - Certificate | Duke University (Coursera)   Statistics, Inference of Numerical and Categorical variables, Multiple Linear Regression\n\n    2013\n\nComputing for Data Analysis - Certificate | Johns Hopkins (Coursera)   Intro course for R\n\n    2012\n\nMachine Learning - Certificate | Stanford (Coursera)   Logistic Regression, Neural Networks, Support Vector Machines, K-means clustering, Principal Component Analysis\nThis data driven CV is made with Quarto and Google Sheets. Last updated on feb. 10, 2024.  Code available on  GitHub."
   },
   {
-    "objectID": "notes/data-science/resources.html",
-    "href": "notes/data-science/resources.html",
-    "title": "Resources",
+    "objectID": "cv_ivar.html#work",
+    "href": "cv_ivar.html#work",
+    "title": "Ivar Soares Urdalen",
     "section": "",
-    "text": "Resources for data science"
+    "text": "Current  |  2023\n\nData Engineer | Exabel | Oslo, Norway  1. Developing and maintaining data pipelines.\n2. Python backend development\nTech: GCP, Kubernetes, Python, SQL, Snowflake, etc.\n\n    2022  |  2017\n\nSenior Consulting Civil Engineer | Ramboll | Drammen, Norway  1. Leading consulting projects for water engineering (pipelines, pumping stations, treatment plants, stormwater design, etc.) 2. Typically having the Discipline Lead role in projects 3. Tasks: Producing tender documents, reports, design review, project management, BIM/CAD design. 4. Example of IT project: Assisting in deploying prototype for project QA with Python web app (Flask framework)\n\n    2017  |  2015\n\nProject Manager | Aqua Unique Norway | Drammen, Norway  1. Tasks: Technical design in project, project management, contracts, supplier negotiations, marketing, strategy and recruitment.2. Development of Excel spreadsheets for project budgets, pricing models, supplier comparison, technical design, etc. 3. Assisting with operation of IT infrastructure (website, email, file server, backup, wiki, CRM system, etc)\n\n    2015  |  2014\n\nConsulting Civil Engineer | Asplan Viak | Oslo, Norway  Tasks: Water and wastewater treatment plant design and BIM/CAD modelling. Material takeoff, P&ID, tender documents.\n\n    2012\n\nEngineering Intern | COWI | Oslo, Norway  Design of water distribution systems, and CAD modelling.\n\n    2009\n\nDeveloper Intern | Silicon Labs formerly Energy Micro | Oslo, Norway  C programming for development kit for energy efficient microcontroller."
   },
   {
-    "objectID": "notes/databases/financial-database.html",
-    "href": "notes/databases/financial-database.html",
-    "title": "Financial Database",
+    "objectID": "cv_ivar.html#personal-projects",
+    "href": "cv_ivar.html#personal-projects",
+    "title": "Ivar Soares Urdalen",
     "section": "",
-    "text": "In this article we layout how to setup a financial database for prices for securities. It is inspired by Michael L. Halls-Moore book: Successful Algorithmic Trading.\nThe following tables in database is recommended:\nFor MySQL"
+    "text": "Current  |  2022\n\nStock Analysis Dashboard    Technology: Python, Plotly/Dash, SQlite  Created a dashboard for statistical and technical analysis of stocks."
   },
   {
-    "objectID": "notes/databases/financial-database.html#schemas",
-    "href": "notes/databases/financial-database.html#schemas",
-    "title": "Financial Database",
-    "section": "Schemas",
-    "text": "Schemas\n\nDailyPrice:\n\n\n\nColumn\nType\nDescription\n\n\n\n\nid\ninteger\nPrimary Key\n\n\ndata_vendor_id\ninteger\nForeign Key\n\n\nsymbol_id\ninteger\nForeign Key\n\n\nprice_date\ndatetime\n\n\n\nopen\ndecimal\n\n\n\nhigh\ndecimal\n\n\n\nlow\ndecimal\n\n\n\nclose\ndecimal\n\n\n\nadj_close\ndecimal\n\n\n\nvolume\nbigint\n\n\n\n\n\n\nSymbol:\n\n\n\nColumn\nType\nDescription\n\n\n\n\nid\ninteger\nPrimary Key\n\n\nexchange_id\ninteger\nForeign Key\n\n\nticker\nvarchar\n\n\n\ninstrument\nvarchar\n\n\n\nname\nvarchar\n\n\n\nsector\nvarchar\n\n\n\ncurrency\nvarchar\n\n\n\ncreated_date\ndatetime\n\n\n\nlast_updated_date\ndatetime"
-  },
-  {
-    "objectID": "notes/databases/sql.html",
-    "href": "notes/databases/sql.html",
-    "title": "SQL",
+    "objectID": "cv_ivar.html#education",
+    "href": "cv_ivar.html#education",
+    "title": "Ivar Soares Urdalen",
     "section": "",
-    "text": "Here I gather some of the common commands for SQL databases"
+    "text": "Current  |  2022\n\nMSc in Financial Engineering | World Quant University   Courses: Financial Markets, Financial Data, Financial Econometrics, Derivative Pricing, Stochastic Modeling, Machine Learning, Deep Learning, Portfolio Management, Risk Management\nHeavy focus on using Python for data analysis\n\n    2015  |  2010\n\nMSc in Civil and Environmental Engineering | Norwegian University of Science and Technology (NTNU) | Trondheim, Norway  Average Grade: A \nAdditional courses: Algorithms and Data Structures, Finance, Business Economics, C++ Programming\n\n    2014\n\nMSc Student exchange - Civil Engineering | Federal University of Santa Catarina | Florianopolis, Brazil  All student work and lectures in Portuguese\n\n    2013\n\nSpanish and Portuguese Language Studies | Independent learning | South America  Web apps, audio courses, etc\n\n    2009  |  2008\n\n1st year - MSc in Cybernetics and Robotics | Norwegian University of Science and Technology (NTNU) | Trondheim, Norway  Grade (1st yr): A"
   },
   {
-    "objectID": "notes/databases/sql.html#mysql",
-    "href": "notes/databases/sql.html#mysql",
-    "title": "SQL",
-    "section": "MySQL",
-    "text": "MySQL\nCreate and use new database:\nCREATE DATABASE new_db;\nUSE DATABASE new_db;\nCreate a new user:\nCREATE USER 'new_user'@'localhost' IDENTIFIED BY 'new_password';\nSet privileges of the created user\nGRANT ALL PRIVILEGES ON new_db.* TO 'new_user'@'localhost';\nFLUSH PRIVILEGES;"
-  },
-  {
-    "objectID": "notes/databases/sql.html#postgresql",
-    "href": "notes/databases/sql.html#postgresql",
-    "title": "SQL",
-    "section": "PostgreSQL",
-    "text": "PostgreSQL\nCreate a new user:\nCREATE USER new_user WITH PASSWORD 'new_password';\nSet privileges of the created user\nGRANT ALL PRIVILEGES ON DATABASE new_db TO new_user;"
-  },
-  {
-    "objectID": "notes/index.html",
-    "href": "notes/index.html",
-    "title": "Notes",
+    "objectID": "cv_ivar.html#awards",
+    "href": "cv_ivar.html#awards",
+    "title": "Ivar Soares Urdalen",
     "section": "",
-    "text": "Welcome to my open notebook! I will use this open notebook to record what I learn mostly regarding data science and financial engineering. It can also be called my Digital Garden or Second Brain."
+    "text": "2007\n\nWinner of Informatics Olympiad for High School Students | Norwegian Informatics Olympiad | Trondheim, Norway  Algorithmic Programming Competition for High School Students (C++ Programming)  Participated in Baltic Informatics Olympiad (BOI) and International Olympiad in Informatics (IOI)."
   },
   {
-    "objectID": "notes/trading/strategies.html",
-    "href": "notes/trading/strategies.html",
-    "title": "Trading Strategies",
+    "objectID": "cv_ivar.html#courses",
+    "href": "cv_ivar.html#courses",
+    "title": "Ivar Soares Urdalen",
     "section": "",
-    "text": "This note will describe the main categories of trading strategies.\nThere are 2 main trading strategies: Trend Following and Mean Reversion.\nThere are other strategies as well, but they will be elaborated on at a later stage."
-  },
-  {
-    "objectID": "notes/trading/strategies.html#trend-following",
-    "href": "notes/trading/strategies.html#trend-following",
-    "title": "Trading Strategies",
-    "section": "Trend Following",
-    "text": "Trend Following\nObjective: To enter when a new trend is established, and exit when the trend is over.\nIndicators:\n\nMoving averages (most common)\nTrendlines\nAverage Directional Index (measure trend strength)\nLinear Regression (forecast, slope)\nSupertrend\n\nChallenge: Maintain small losses for losing trades.\nSummary\nTrend following have a few great trades with larger profits, and small losses on a larger amount of trades. Can go through periods of poor performance."
-  },
-  {
-    "objectID": "notes/trading/strategies.html#mean-reversion",
-    "href": "notes/trading/strategies.html#mean-reversion",
-    "title": "Trading Strategies",
-    "section": "Mean Reversion",
-    "text": "Mean Reversion\nObjective: Assuming the price will revert back to a mean. Look to buy oversold, and sell overbought.\nIndicators:\n\nRelative Strength Index\nBollinger Bands\nDisparity Index (distance from moving average)\nStochastic oscillator\n\nChallenge: Mean reversion is exposed to left tail risk (huge infrequent losses). Can take a long time to recover from big losses.\nSummary: Mean reversion typically have small consistent profits, and low volatility in the strategy."
-  },
-  {
-    "objectID": "notes/trading/strategies.html#trend-following-vs-mean-reversion",
-    "href": "notes/trading/strategies.html#trend-following-vs-mean-reversion",
-    "title": "Trading Strategies",
-    "section": "Trend Following vs Mean Reversion",
-    "text": "Trend Following vs Mean Reversion\nComparison of key performance metrics:\n\n\n\nPerformance Metric\nTrend Following\nMean Reversion\n\n\n\n\nWin rate\nLow\nHigh\n\n\nTrade duration\nLong\nShort\n\n\nNumber of trades\nLow\nHigh\n\n\nProfit per trade\nHigher\nLow\n\n\nVolatility\nHigh\nLow"
+    "text": "Current  |  2023\n\nCloud Data Engineer Professional Certificate | Google (Coursera)   Dataflow (Apache Beam), Dataproc (Spark/Hadoop), Data Fusion, Cloud Composer (Airflow), BigQuery, Streaming (Kafka). Preparation for taking the certification exam.\n\n    Current  |  2022\n\nApplied Data Science Lab | World Quant University   Practical application of Python for Data Science (pandas, scikit-learn, model building, etc)\n\n    2022\n\nData Engineering Foundations - Certificate | LinkedIn Learning   ETL pipelines, Hive, Hadoop, Spark, and Airflow\n\n    2014\n\nData Analysis and Statistical Inference - Certificate | Duke University (Coursera)   Statistics, Inference of Numerical and Categorical variables, Multiple Linear Regression\n\n    2013\n\nComputing for Data Analysis - Certificate | Johns Hopkins (Coursera)   Intro course for R\n\n    2012\n\nMachine Learning - Certificate | Stanford (Coursera)   Logistic Regression, Neural Networks, Support Vector Machines, K-means clustering, Principal Component Analysis"
   },
   {
     "objectID": "site/blog/posts/2022-11-11-data-for-OSE/index.html",
@@ -96,12 +64,5 @@
     "title": "Downloading data for Oslo Stock Exchange",
     "section": "",
     "text": "In this tutorial we are going to download stock price data for Oslo Stock Exchange and store it in a database.s"
-  },
-  {
-    "objectID": "site/portfolio/index.html",
-    "href": "site/portfolio/index.html",
-    "title": "Portfolio",
-    "section": "",
-    "text": "Finance\nMy projects in the finance domain\n\n\n\n  \n\n  \n  \n    \n    \n    \n      \n      \n      \n        \n      \n      \n      \n      \n        \n          Stock Analysis Dashboard\n          Technology: Python, Dash/Plotly, SQlite\n          Statistical and technical analysis of stocks.  Return distribution, volatility, correlation, comparison, etc.\n        \n      \n    \n  \n\n  \n\n  \n  \n    \n    \n    \n      \n      \n      \n        \n      \n      \n      \n      \n        \n          TradeManager\n          Technology: Python (Backend: FastAPI / SQL database, Frontend: Jinja).\n          Trading Journal web app for managing active trades and calculating statistics on closed trades.\n        \n      \n    \n  \n\n  \n\n  \n  \n    \n    \n    \n      \n      \n      \n        \n      \n      \n      \n      \n        \n          AlertManager\n          Technology: Python (Backend FastAPI / SQL database), Deployed on Cloud provider\n          Alerts from TradingView as webhooks is stored in SQL database for analysis and visualization. Live trading on alerts not implemented yet.\n        \n      \n    \n  \n\n\n\nNo matching items"
   }
 ]

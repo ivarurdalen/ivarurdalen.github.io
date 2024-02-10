@@ -3,14 +3,17 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
+    - "!index_old.qmd"
+    - "!cv_ivar_old.qmd"
     - "!cv.qmd"
     - "!notes/mscfe_wqu.qmd"
     - "!mscfe-wqu/*.qmd"
     - "!blog/*.qmd"
+    - "!notes/**/*.qmd"
     # - "!portfolio.qmd"
 
 website:
-  title: "Ivar Soares Urdalen - Data Science"
+  title: "Ivar Soares Urdalen - Financial Data"
   open-graph: true
   site-url: https://ivarurdalen.github.io
   repo-url: https://www.github.com/ivarurdalen/ivarurdalen.github.io
@@ -29,8 +32,8 @@ website:
         file: index.qmd
       - text: "CV"
         file: cv_ivar.qmd
-      - text: "Notes" 
-        file: notes/index.qmd
+      # - text: "Notes" 
+      #   file: notes/index.qmd
       - text: "Portfolio"
         file: site/portfolio/index.qmd
       # - text: "Blog"
@@ -74,14 +77,16 @@ website:
   
 format:
   html:
-    theme: zephyr
-    # theme: journal
+    theme: cosmo
     fontsize: 1.0em
     code-copy: true
     code-overflow: wrap
     css: styles.css
     toc: true
     toc-title: "Contents"
-
+    grid:
+      sidebar-width: 250px
+      body-width: 900px
+      margin-width: 300px
 
 

@@ -4,6 +4,7 @@
 :root {
     --bs-blue: #3f8cd4;
     --bs-primary: #eb6864;
+    --bs-black: #191818d1;
 }
 
 h1, h2, h3 {
@@ -26,19 +27,17 @@ h3{
     font-size: 1rem;
 }
 
-
 a{
-  color: var(--bs-blue);
+  color: var(--bs-black);
 }
 
 b, strong {
-    color: var(--bs-blue);
+    color: var(--bs-black);
     font-weight: bolder;
 }
 
 ul, p, .gt_table, .gt_row{
   color: #626262;
-  font-size: .825rem;
 }
 
 .footer{

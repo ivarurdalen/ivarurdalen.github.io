@@ -1,26 +1,43 @@
 ---
-title: "Ivar Soares Urdalen"
-image: profile.jpg
-description-meta: I'm Ivar. Let us discuss data!
-about:
-    template: trestles
-    image-shape: rounded
-    image-width: 15em
-    links: 
-          - icon: github
-            text: Github
-            href: https://github.com/ivarurdalen
-          - icon: linkedin
-            text: LinkedIn
-            href: https://www.linkedin.com/in/ivarurdalen/
-          - icon: envelope
-            text: Email
-            href: "mailto:ivar.urdalen@gmail.com"
+title: ""
+format: html
+page-layout: full
 
+# image: profile.jpg
+# description-meta: I'm Ivar. Let us discuss data!
+# about:
+#     template: trestles
+#     image-shape: rounded
+#     image-width: 15em
+#     links: 
+#           - icon: github
+#             text: Github
+#             href: https://github.com/ivarurdalen
+#           - icon: linkedin
+#             text: LinkedIn
+#             href: https://www.linkedin.com/in/ivarurdalen/
+#           - icon: envelope
+#             text: Email
+#             href: "mailto:ivar.urdalen@gmail.com"
 ---
 
+::: {.grid}
+
+::: {.g-col-3}
+
+[![](profile_160.jpg){.rounded}](https://ivarurdalen.github.io)  
+  
+🏢 [Data Engineer](https://www.linkedin.com/in/ivarurdalen/) at <a href='https://www.exabel.com/' target='_blank'>Exabel</a>  
+{{< fa brands github >}} <a href='https://github.com/ivarurdalen' target='_blank'>GitHub</a>
+
+:::
+
+::: {.g-col-9}
+
 ### Hi there, I am Ivar Soares Urdalen 👋
-I am currently changing career from Civil Engineering to Data Science / Data Engineering with a focus on Finance space.  
+
+I currently work as a Data Engineer at [Exabel](https://www.exabel.com/)
+
 Feel free to [check out my online CV](cv_ivar.html) if interested.   
 Or check out my [portfolio of different projects](site/portfolio/index.qmd).  
 
@@ -33,10 +50,6 @@ Or check out my [portfolio of different projects](site/portfolio/index.qmd).
 
 🚀 On [GitHub](https://github.com/ivarurdalen) I work on personal projects to develop my skills as a Financial Engineer / Data Scientist and Quantitative Developer.
 
-<!-- ----  
+:::
 
-## Summary  
-This is a short summary of my skills.  
-
-----
-## Education -->
+::::
