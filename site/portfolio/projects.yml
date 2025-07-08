@@ -3,6 +3,11 @@
   description: |
     My projects in the finance domain
   tiles:
+    - title: FinMAS - Financial Analysis Multi-Agent System
+      subtitle: "Technology: Python, CrewAI, OpenAI, groq, LlamaIndex, Embedding models, Panel (web app framework)"
+      description: "Multi-agent systems set up for producing financial analysis reports. Developed as part of Capstone project at World Quant University."
+      href: https://github.com/ivarurdalen/finmas
+      thumbnail: projects/finmas.png
     - title: Stock Analysis Dashboard
       subtitle: "Technology: Python, Dash/Plotly, SQlite"
       description: "Statistical and technical analysis of stocks. <br> Return distribution, volatility, correlation, comparison, etc."

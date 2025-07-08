@@ -2,6 +2,7 @@
 title: ""
 format: html
 page-layout: full
+editor: source
 
 # image: profile.jpg
 # description-meta: I'm Ivar. Let us discuss data!
@@ -27,7 +28,7 @@ page-layout: full
 
 [![](profile_160.jpg){.rounded}](https://ivarurdalen.github.io)  
   
-🏢 [Data Engineer](https://www.linkedin.com/in/ivarurdalen/) at <a href='https://www.exabel.com/' target='_blank'>Exabel</a>  
+🏢 [Senior Data Engineer](https://www.linkedin.com/in/ivarurdalen/) at <a href='https://www.exabel.com/' target='_blank'>Exabel</a>  
 {{< fa brands github >}} <a href='https://github.com/ivarurdalen' target='_blank'>GitHub</a>
 
 :::
@@ -36,7 +37,7 @@ page-layout: full
 
 ### Hi there, I am Ivar Soares Urdalen 👋
 
-I currently work as a Data Engineer at [Exabel](https://www.exabel.com/)
+I currently work as a Senior Data Engineer at [Exabel](https://www.exabel.com/)
 
 Feel free to [check out my online CV](cv_ivar.html) if interested.   
 Or check out my [portfolio of different projects](site/portfolio/index.qmd).  
@@ -46,9 +47,9 @@ Or check out my [portfolio of different projects](site/portfolio/index.qmd).
 
 ### Personal info
 
-🎓 I'm currently pursuing an [MSc in Financial Engineering](https://www.wqu.edu/programs/mscfe/) at [World Quant University](https://www.wqu.edu/)
+🎓 I have a [MSc in Financial Engineering](https://www.wqu.edu/programs/mscfe/) from [World Quant University](https://www.wqu.edu/) and a MSc in Civil Engineering from [NTNU](https://www.ntnu.edu/).
 
-🚀 On [GitHub](https://github.com/ivarurdalen) I work on personal projects to develop my skills as a Financial Engineer / Data Scientist and Quantitative Developer.
+🚀 On [GitHub](https://github.com/ivarurdalen) I work on personal projects to develop my skills as a Software Engineer and Quantitative Developer.
 
 :::
 

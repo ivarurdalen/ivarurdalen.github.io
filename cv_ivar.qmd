@@ -8,7 +8,7 @@ format:
     standalone: true
     embed-resources: true
 title-block-style: none
-editor: visual
+editor: source
 knitr:
   opts_chunk: 
     echo: false
@@ -26,39 +26,35 @@ cv <- googlesheets4::read_sheet(cv_url)
 
 <!-- Sidebar -->
 
-::: {.grid}
-
-::: {.g-col-4}
+:::::: grid
+::: g-col-4
 
 <center>[![](profile_160.jpg){.rounded}](https://www.ivarurdalen.com)</center>
 
 ### Contact
-<span style="font-size: 1.5em;"> <a href='https://ivarurdalen.github.io' target='_blank'><i class="fa fa-home"></i></a> <a href='https://github.com/ivarurdalen' target='_blank'><i class="fa-brands fa-github"></i></a> <a href='mailto:ivar.urdalen@gmail.com'><i class="fa fa-envelope"></i></a> <a href='https://www.linkedin.com/in/ivarurdalen/' target='_blank'><i class="fa-brands fa-linkedin"></i></a>
-</span>
+
+[<a href='https://ivarurdalen.github.io' target='_blank'><i class="fa fa-home"></i></a> <a href='https://github.com/ivarurdalen' target='_blank'><i class="fa-brands fa-github"></i></a> <a href='mailto:ivar.urdalen@gmail.com'><i class="fa fa-envelope"></i></a> <a href='https://www.linkedin.com/in/ivarurdalen/' target='_blank'><i class="fa-brands fa-linkedin"></i></a>]{style="font-size: 1.5em;"}
 
 ### Key Skills
-- Excellent academic performance in analytical subjects (coding, math, statistics, etc.)  
-- Fast learner (example: learned fluent Portuguese in < 6 months)  
-- High working capacity (example: MSc at NTNU was completed during full time job as engineer)  
+
+- Excellent academic performance in analytical subjects (coding, math, statistics, etc.)\
+- Fast learner (example: learned fluent Portuguese in \< 6 months)\
+- High working capacity (example: MSc at NTNU was completed during full time job as engineer)
 
 ### Technical skills
 
-<!-- Here is a list of technologies I am proficient in to apply in projects.
-However, I believe that a developer should always be ready to pick up new skills and learn new technology. -->
-
-**Languages:** <i class="fa-brands fa-python"></i> Python, <i class="fa-brands fa-square-js"></i> JavaScript, C++  
-**Databases:** <i class="fa-solid fa-database" aria-hidden="true"></i> SQL, <i class="fa-solid fa-snowflake"></i> Snowflake  
-**Frameworks:** FastAPI, Panel(Holoviz)  
-**Cloud computing:** <i class="fa-solid fa-cloud"></i> AWS, GCP <i class="fa-brands fa-docker"></i> Docker, Kubernetes  
+**Languages:** <i class="fa-brands fa-python"></i> Python, <i class="fa-brands fa-square-js"></i> SQL\
+**Databases:** <i class="fa-solid fa-database" aria-hidden="true"></i> SQL, <i class="fa-solid fa-snowflake"></i> Snowflake\
+**Frameworks:** FastAPI, Panel(Holoviz)\
+**Cloud computing:** <i class="fa-solid fa-cloud"></i> AWS, GCP <i class="fa-brands fa-docker"></i> Docker, Kubernetes\
 **DevOps:** CI/CD, <i class="fa-brands fa-github"></i> GitHub
 
 ### Languages
 
 **Norwegian:** Native <br> **English:** Speak and write fluently <br> **Portuguese:** Speak and write fluently
-
 :::
 
-::: {.g-col-8}
+::: g-col-8
 
 ```{r}
 col_br <- function(col){
@@ -135,14 +131,11 @@ create_section <- function(cv_data, section_name){
 
 # Ivar Soares Urdalen
 
-Currently working as a Data Engineer in the [Alternative Data](https://en.wikipedia.org/wiki/Alternative_data_(finance)) space for finance.  
-  
-In addition to work, I am currently pursuing a [MSc in Financial Engineering](https://www.wqu.edu/programs/mscfe/)
-from [World Quant University](https://www.wqu.edu/) while also taking courses/certifications
-and developing my own coding projects in intersection of data engineering and finance.
-Check out my [website](https://ivarurdalen.github.io) to learn more about me and connect.
+I am currently working as a Senior Data Engineer in the [Alternative Data](https://en.wikipedia.org/wiki/Alternative_data_(finance)) space for finance.
 
+I have a [MSc in Financial Engineering](https://www.wqu.edu/programs/mscfe/) from [World Quant University](https://www.wqu.edu/) and a MSc in Civil Engineering from [NTNU](https://www.ntnu.edu/).
 
+I have taken courses and developed my own coding projects in the intersection of data engineering and finance. Check out my [website](https://www.ivarurdalen.com) to learn more about me and connect.
 
 ## <i class="fa-solid fa-suitcase"></i> Work
 
@@ -151,12 +144,15 @@ create_section(cv, "working_experience")
 ```
 
 :::
-::: {.g-col-12}
+
+::: g-col-12
 
 ## <i class="fa-solid fa-code"></i> Personal Projects
+
 ```{r}
 create_section(cv, "personal_projects")
 ```
+
 <!-- [See website for additional projects.](https://ivarurdalen.github.io/site/portfolio) -->
 
 ## <i class="fa-solid fa-graduation-cap"></i> Education
@@ -178,8 +174,7 @@ create_section(cv, "online_courses")
 ```
 
 :::
-
-:::
+::::::
 
 <!-- footer -->
 
