@@ -1,0 +1,115 @@
+[
+  {
+    "objectID": "site/tools/terminal-setup.html",
+    "href": "site/tools/terminal-setup.html",
+    "title": "Terminal Setup",
+    "section": "",
+    "text": "My terminal environment optimized for daily development and AI agent usage.",
+    "crumbs": [
+      "Tools",
+      "Terminal Setup"
+    ]
+  },
+  {
+    "objectID": "site/tools/terminal-setup.html#terminal-emulator",
+    "href": "site/tools/terminal-setup.html#terminal-emulator",
+    "title": "Terminal Setup",
+    "section": "Terminal Emulator",
+    "text": "Terminal Emulator\nKitty — A fast, feature-rich, GPU-accelerated terminal emulator. Supports ligatures, image rendering, and extensive customization via config files.",
+    "crumbs": [
+      "Tools",
+      "Terminal Setup"
+    ]
+  },
+  {
+    "objectID": "site/tools/terminal-setup.html#shell",
+    "href": "site/tools/terminal-setup.html#shell",
+    "title": "Terminal Setup",
+    "section": "Shell",
+    "text": "Shell\nZsh with Oh My Zsh — Zsh as the primary shell, managed through Oh My Zsh for easy plugin and theme management.\n\nTheme: af-magic\nPlugins:\n\nzsh-autosuggestions — suggests commands as you type based on history\nzsh-syntax-highlighting — real-time syntax highlighting in the terminal\ngit, git-prompt, gh — Git and GitHub CLI integration\nz — frecency-based directory jumping\ndocker, docker-compose — Docker completions and aliases\ngcloud, kubectl — Google Cloud and Kubernetes tooling\nuv — Python package manager completions",
+    "crumbs": [
+      "Tools",
+      "Terminal Setup"
+    ]
+  },
+  {
+    "objectID": "site/tools/terminal-setup.html#core-tools",
+    "href": "site/tools/terminal-setup.html#core-tools",
+    "title": "Terminal Setup",
+    "section": "Core Tools",
+    "text": "Core Tools\n\nfzf\nFuzzy finder — Replaces the default Ctrl+R history search with an interactive, fuzzy-matching search. Also useful for file selection and piping into other commands.\n\n\neza\nModern ls replacement — Provides colorized output, git status integration, tree views, and icons. A maintained fork of the original exa.\n\n\nmicro\nTerminal text editor — A modern alternative to nano with intuitive keybindings (Ctrl+S to save, Ctrl+Q to quit), syntax highlighting, mouse support, and plugin extensibility.\n\n\nrich-cli\nSyntax-highlighted file viewer — Installed via uv tool install rich-cli. Acts as a cat replacement that renders markdown, JSON, CSV, and source code with syntax highlighting and formatting.\n\n\ndelta\nGit pager — A syntax-highlighting pager for git diff, git log, and git show output. Provides side-by-side diffs, line numbers, and language-aware highlighting out of the box.\n\n\nfala\nSpeech-to-text CLI — A Python package built on the OpenAI Whisper API for transcribing speech directly from the terminal. Useful for voice-driven workflows and dictation.",
+    "crumbs": [
+      "Tools",
+      "Terminal Setup"
+    ]
+  },
+  {
+    "objectID": "site/portfolio/index.html",
+    "href": "site/portfolio/index.html",
+    "title": "Portfolio",
+    "section": "",
+    "text": "Finance\n\nMy projects in the finance domain\n\n\n\n\n\n  \n\n  \n  \n    \n    \n    \n      \n      \n      \n        \n      \n      \n      \n      \n        \n          FinMAS - Financial Analysis Multi-Agent System\n          Technology: Python, CrewAI, OpenAI, groq, LlamaIndex, Embedding models, Panel (web app framework)\n          Multi-agent systems set up for producing financial analysis reports. Developed as part of Capstone project at World Quant University.\n        \n      \n    \n  \n\n\n  \n\n  \n  \n    \n    \n    \n      \n      \n      \n        \n      \n      \n      \n      \n        \n          Stock Analysis Dashboard\n          Technology: Python, Dash/Plotly, SQlite\n          Statistical and technical analysis of stocks.  Return distribution, volatility, correlation, comparison, etc.\n        \n      \n    \n  \n\n\n  \n\n  \n  \n    \n    \n    \n      \n      \n      \n        \n      \n      \n      \n      \n        \n          TradeManager\n          Technology: Python (Backend: FastAPI / SQL database, Frontend: Jinja).\n          Trading Journal web app for managing active trades and calculating statistics on closed trades.\n        \n      \n    \n  \n\n\n  \n\n  \n  \n    \n    \n    \n      \n      \n      \n        \n      \n      \n      \n      \n        \n          AlertManager\n          Technology: Python (Backend FastAPI / SQL database), Deployed on Cloud provider\n          Alerts from TradingView as webhooks is stored in SQL database for analysis and visualization. Live trading on alerts not implemented yet.\n        \n      \n    \n  \n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Portfolio"
+    ]
+  },
+  {
+    "objectID": "cv_ivar.html",
+    "href": "cv_ivar.html",
+    "title": "Ivar Soares Urdalen",
+    "section": "",
+    "text": "Excellent academic performance in analytical subjects (coding, math, statistics, etc.)\n\nFast learner (example: learned fluent Portuguese in &lt; 6 months)\n\nHigh working capacity (example: MSc at NTNU was completed during full time job as engineer)\n\n\n\n\nLanguages:  Python,  SQL\nDatabases:  SQL,  Snowflake\nFrameworks: FastAPI, Panel(Holoviz)\nCloud computing:  AWS, GCP,  Docker, Kubernetes\nDevOps: CI/CD,  GitHub\n\n\n\nNorwegian: Native  English: Speak and write fluently  Portuguese: Speak and write fluently\n\n\n\n\n\n\nI am currently working as a Senior AI Engineer in the Alternative Data space for finance.\nI have a MSc in Financial Engineering from World Quant University and a MSc in Civil Engineering from NTNU.\nI have taken courses and developed my own coding projects in the intersection of data engineering and finance. Check out my website to learn more about me and connect.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCurrent\n|\n2026\nSenior AI Engineer | Exabel | Oslo, Norway\nEverything related to agentic workflows within the company.\n\n\n2026\n|\n2025\nSenior Data Engineer | Exabel | Oslo, Norway\nPrediction modelling for financial time series in addition to data engineering tasks.\n\n\n2024\n|\n2023\nData Engineer | Exabel | Oslo, Norway\n1. Developing and maintaining data pipelines.\n2. Python backend development\nTech: GCP, Kubernetes, Python, SQL, Snowflake, etc.\n\n\n2022\n|\n2017\nSenior Consulting Civil Engineer | Ramboll | Drammen, Norway\n1. Leading consulting projects for water engineering (pipelines, pumping stations, treatment plants, stormwater design, etc.)\n2. Typically having the Discipline Lead role in projects\n3. Tasks: Producing tender documents, reports, design review, project management, BIM/CAD design.\n4. Example of IT project: Assisting in deploying prototype for project QA with Python web app (Flask framework)\n\n\n2017\n|\n2015\nProject Manager | Aqua Unique Norway | Drammen, Norway\n1. Tasks: Technical design in project, project management, contracts, supplier negotiations, marketing, strategy and recruitment.\n2. Development of Excel spreadsheets for project budgets, pricing models, supplier comparison, technical design, etc.\n3. Assisting with operation of IT infrastructure (website, email, file server, backup, wiki, CRM system, etc)\n\n\n2015\n|\n2014\nConsulting Civil Engineer | Asplan Viak | Oslo, Norway\nTasks: Water and wastewater treatment plant design and BIM/CAD modelling. Material takeoff, P&ID, tender documents.\n\n\n2012\nEngineering Intern | COWI | Oslo, Norway\nDesign of water distribution systems, and CAD modelling.\n\n\n2009\nDeveloper Intern | Silicon Labs formerly Energy Micro | Oslo, Norway\nC programming for development kit for energy efficient microcontroller.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCurrent\n|\n2025\nPyPI packages: coinalyze (crypto futures), fala (speech-to-text) and takit (Technical Analysis lib)\nMaintaining open source Python packages.\n\n\n2024\nFinMAS: Financial Analysis using LLM Multi-Agent Systems\nCapstone project at MScFE at WQU. Using LLM models in a multi-agent system to produce financial analysis reports.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2024\n|\n2022\nMSc in Financial Engineering | World Quant University\nCourses: Financial Markets, Financial Data, Financial Econometrics, Derivative Pricing, Stochastic Modeling, Machine Learning, Deep Learning, Portfolio Management, Risk Management\nHeavy focus on using Python for data analysis\n\n\n2015\n|\n2010\nMSc in Civil and Environmental Engineering | Norwegian University of Science and Technology (NTNU) | Trondheim, Norway\nAverage Grade: A\nAdditional courses: Algorithms and Data Structures, Finance, Business Economics, C++ Programming\n\n\n2014\nMSc Student exchange - Civil Engineering | Federal University of Santa Catarina | Florianopolis, Brazil\nAll student work and lectures in Portuguese\n\n\n2013\nSpanish and Portuguese Language Studies | Independent learning | South America\nWeb apps, audio courses, etc\n\n\n2009\n|\n2008\n1st year - MSc in Cybernetics and Robotics | Norwegian University of Science and Technology (NTNU) | Trondheim, Norway\nGrade (1st yr): A\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2007\nWinner of Informatics Olympiad for High School Students | Norwegian Informatics Olympiad | Trondheim, Norway\nAlgorithmic Programming Competition for High School Students (C++ Programming)\nParticipated in Baltic Informatics Olympiad (BOI) and International Olympiad in Informatics (IOI).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2022\nData Engineering Foundations - Certificate | LinkedIn Learning\nETL pipelines, Hive, Hadoop, Spark, and Airflow\n\n\n2014\nData Analysis and Statistical Inference - Certificate | Duke University (Coursera)\nStatistics, Inference of Numerical and Categorical variables, Multiple Linear Regression\n\n\n2013\nComputing for Data Analysis - Certificate | Johns Hopkins (Coursera)\nIntro course for R\n\n\n2012\nMachine Learning - Certificate | Stanford (Coursera)\nLogistic Regression, Neural Networks, Support Vector Machines, K-means clustering, Principal Component Analysis"
+  },
+  {
+    "objectID": "cv_ivar.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-work",
+    "href": "cv_ivar.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-work",
+    "title": "Ivar Soares Urdalen",
+    "section": "",
+    "text": "Current\n|\n2026\nSenior AI Engineer | Exabel | Oslo, Norway\nEverything related to agentic workflows within the company.\n\n\n2026\n|\n2025\nSenior Data Engineer | Exabel | Oslo, Norway\nPrediction modelling for financial time series in addition to data engineering tasks.\n\n\n2024\n|\n2023\nData Engineer | Exabel | Oslo, Norway\n1. Developing and maintaining data pipelines.\n2. Python backend development\nTech: GCP, Kubernetes, Python, SQL, Snowflake, etc.\n\n\n2022\n|\n2017\nSenior Consulting Civil Engineer | Ramboll | Drammen, Norway\n1. Leading consulting projects for water engineering (pipelines, pumping stations, treatment plants, stormwater design, etc.)\n2. Typically having the Discipline Lead role in projects\n3. Tasks: Producing tender documents, reports, design review, project management, BIM/CAD design.\n4. Example of IT project: Assisting in deploying prototype for project QA with Python web app (Flask framework)\n\n\n2017\n|\n2015\nProject Manager | Aqua Unique Norway | Drammen, Norway\n1. Tasks: Technical design in project, project management, contracts, supplier negotiations, marketing, strategy and recruitment.\n2. Development of Excel spreadsheets for project budgets, pricing models, supplier comparison, technical design, etc.\n3. Assisting with operation of IT infrastructure (website, email, file server, backup, wiki, CRM system, etc)\n\n\n2015\n|\n2014\nConsulting Civil Engineer | Asplan Viak | Oslo, Norway\nTasks: Water and wastewater treatment plant design and BIM/CAD modelling. Material takeoff, P&ID, tender documents.\n\n\n2012\nEngineering Intern | COWI | Oslo, Norway\nDesign of water distribution systems, and CAD modelling.\n\n\n2009\nDeveloper Intern | Silicon Labs formerly Energy Micro | Oslo, Norway\nC programming for development kit for energy efficient microcontroller."
+  },
+  {
+    "objectID": "cv_ivar.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6465203e7d7d-personal-projects",
+    "href": "cv_ivar.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6465203e7d7d-personal-projects",
+    "title": "Ivar Soares Urdalen",
+    "section": "",
+    "text": "Current\n|\n2025\nPyPI packages: coinalyze (crypto futures), fala (speech-to-text) and takit (Technical Analysis lib)\nMaintaining open source Python packages.\n\n\n2024\nFinMAS: Financial Analysis using LLM Multi-Agent Systems\nCapstone project at MScFE at WQU. Using LLM models in a multi-agent system to produce financial analysis reports."
+  },
+  {
+    "objectID": "cv_ivar.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-education",
+    "href": "cv_ivar.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-education",
+    "title": "Ivar Soares Urdalen",
+    "section": "",
+    "text": "2024\n|\n2022\nMSc in Financial Engineering | World Quant University\nCourses: Financial Markets, Financial Data, Financial Econometrics, Derivative Pricing, Stochastic Modeling, Machine Learning, Deep Learning, Portfolio Management, Risk Management\nHeavy focus on using Python for data analysis\n\n\n2015\n|\n2010\nMSc in Civil and Environmental Engineering | Norwegian University of Science and Technology (NTNU) | Trondheim, Norway\nAverage Grade: A\nAdditional courses: Algorithms and Data Structures, Finance, Business Economics, C++ Programming\n\n\n2014\nMSc Student exchange - Civil Engineering | Federal University of Santa Catarina | Florianopolis, Brazil\nAll student work and lectures in Portuguese\n\n\n2013\nSpanish and Portuguese Language Studies | Independent learning | South America\nWeb apps, audio courses, etc\n\n\n2009\n|\n2008\n1st year - MSc in Cybernetics and Robotics | Norwegian University of Science and Technology (NTNU) | Trondheim, Norway\nGrade (1st yr): A"
+  },
+  {
+    "objectID": "cv_ivar.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206177617264203e7d7d-awards",
+    "href": "cv_ivar.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206177617264203e7d7d-awards",
+    "title": "Ivar Soares Urdalen",
+    "section": "",
+    "text": "2007\nWinner of Informatics Olympiad for High School Students | Norwegian Informatics Olympiad | Trondheim, Norway\nAlgorithmic Programming Competition for High School Students (C++ Programming)\nParticipated in Baltic Informatics Olympiad (BOI) and International Olympiad in Informatics (IOI)."
+  },
+  {
+    "objectID": "cv_ivar.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206368616c6b626f6172642d75736572203e7d7d-courses",
+    "href": "cv_ivar.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206368616c6b626f6172642d75736572203e7d7d-courses",
+    "title": "Ivar Soares Urdalen",
+    "section": "",
+    "text": "2022\nData Engineering Foundations - Certificate | LinkedIn Learning\nETL pipelines, Hive, Hadoop, Spark, and Airflow\n\n\n2014\nData Analysis and Statistical Inference - Certificate | Duke University (Coursera)\nStatistics, Inference of Numerical and Categorical variables, Multiple Linear Regression\n\n\n2013\nComputing for Data Analysis - Certificate | Johns Hopkins (Coursera)\nIntro course for R\n\n\n2012\nMachine Learning - Certificate | Stanford (Coursera)\nLogistic Regression, Neural Networks, Support Vector Machines, K-means clustering, Principal Component Analysis"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ivar Soares Urdalen - Financial Data",
+    "section": "",
+    "text": "🏢 Senior AI Engineer at Exabel\n GitHub\n\n\n\nHi there, I am Ivar Soares Urdalen 👋\nI currently work as a Senior AI Engineer at Exabel\nFeel free to check out my online CV if interested.\nOr check out my portfolio of different projects.\n\n\n💬 You can connect with me at\n\n\n\nPersonal info\n🎓 I have a MSc in Financial Engineering from World Quant University and a MSc in Civil Engineering from NTNU.\n🚀 On GitHub I work on personal projects to develop my skills as a Software Engineer and Quantitative Developer."
+  },
+  {
+    "objectID": "site/tools/index.html",
+    "href": "site/tools/index.html",
+    "title": "Tools",
+    "section": "",
+    "text": "A collection of tools and configurations I use in my daily workflow.\n\nTerminal Setup — My terminal environment optimized for development and AI agent usage.",
+    "crumbs": [
+      "Tools"
+    ]
+  }
+]
