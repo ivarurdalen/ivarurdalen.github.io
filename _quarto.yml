@@ -1,61 +1,45 @@
+execute:
+  freeze: auto
+
 project:
   type: website
-  output-dir: docs
   render:
     - "*.qmd"
-    - "!index_old.qmd"
-    - "!cv_ivar_old.qmd"
-    - "!cv.qmd"
-    - "!notes/mscfe_wqu.qmd"
-    - "!mscfe-wqu/*.qmd"
-    - "!blog/*.qmd"
     - "!notes/**/*.qmd"
-    # - "!portfolio.qmd"
 
 website:
   title: "Ivar Soares Urdalen - Financial Data"
   open-graph: true
-  site-url: https://ivarurdalen.github.io
+  site-url: https://ivarurdalen.com
   repo-url: https://www.github.com/ivarurdalen/ivarurdalen.github.io
   repo-actions: [edit, issue]
   search:
     location: navbar
     type: overlay
-  page-footer: 
+  page-footer:
     left: |
       Website made with [Quarto](https://www.quarto.org)
   navbar:
-    # background: light
     search: true
     left:
       - text: "Home"
         file: index.qmd
       - text: "CV"
         file: cv_ivar.qmd
-      # - text: "Notes" 
-      #   file: notes/index.qmd
       - text: "Portfolio"
         file: site/portfolio/index.qmd
-      # - text: "Blog"
-      #   file: site/blog/index.qmd
-
-    right: 
+      - text: "Tools"
+        file: site/tools/index.qmd
+    right:
       - icon: github
         href: https://github.com/ivarurdalen/
-      # - href: portfolio.qmd
-      # - href: mscfe_wqu.qmd
-      #   text: MSc FE WQU
-      # - href: blog.qmd
-  
-  sidebar: 
-    # - id: notes
+
+  sidebar:
     - title: "Notes"
       style: "floating"
       collapse-level: 2
       align: left
-      contents: 
-        # - text: "Notes"
-          # href: notes/index.qmd
+      contents:
         - notes/index.qmd
         - section: "Algorithmic Trading"
           contents:
@@ -65,16 +49,16 @@ website:
           contents:
             - notes/databases/sql.qmd
             - notes/databases/financial-database.qmd
-    
+
     - title: "Portfolio"
-      contents: 
+      contents:
         - site/portfolio/index.qmd
 
-    # - title: "Blog"
-    #   contents: 
-    #     - site/blog/index.qmd
+    - title: "Tools"
+      contents:
+        - site/tools/index.qmd
+        - site/tools/terminal-setup.qmd
 
-  
 format:
   html:
     theme: cosmo
@@ -88,5 +72,3 @@ format:
       sidebar-width: 250px
       body-width: 900px
       margin-width: 300px
-
-

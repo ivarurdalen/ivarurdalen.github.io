@@ -1,27 +1,24 @@
 ---
 title: ""
-format: 
+format:
   html:
     css: cv.css
     page-layout: article
     output-file: cv_ivar.html
-    standalone: true
-    embed-resources: true
 title-block-style: none
 editor: source
-knitr:
-  opts_chunk: 
-    echo: false
-    message: false
-    warning: false
+jupyter: python3
+execute:
+  echo: false
+  warning: false
 ---
 
-```{r}
+```{python}
 #| include: false
-#| cache: false
-googlesheets4::gs4_deauth()
-cv_url <- "https://docs.google.com/spreadsheets/d/1mORzRlwt7in5yxdu7UiMhEDQQJQWvuXeqcFjh_dP0Qo/edit?usp=sharing"
-cv <- googlesheets4::read_sheet(cv_url)
+import sys
+sys.path.insert(0, "scripts")
+from cv_data import cv, create_section
+from datetime import date
 ```
 
 <!-- Sidebar -->
@@ -33,7 +30,9 @@ cv <- googlesheets4::read_sheet(cv_url)
 
 ### Contact
 
-[<a href='https://ivarurdalen.github.io' target='_blank'><i class="fa fa-home"></i></a> <a href='https://github.com/ivarurdalen' target='_blank'><i class="fa-brands fa-github"></i></a> <a href='mailto:ivar.urdalen@gmail.com'><i class="fa fa-envelope"></i></a> <a href='https://www.linkedin.com/in/ivarurdalen/' target='_blank'><i class="fa-brands fa-linkedin"></i></a>]{style="font-size: 1.5em;"}
+::: {style="font-size: 1.5em;"}
+[{{< fa home >}}](https://ivarurdalen.github.io){target='_blank'} [{{< fa brands github >}}](https://github.com/ivarurdalen){target='_blank'} [{{< fa envelope >}}](mailto:ivar.urdalen@gmail.com) [{{< fa brands linkedin >}}](https://www.linkedin.com/in/ivarurdalen/){target='_blank'}
+:::
 
 ### Key Skills
 
@@ -43,11 +42,11 @@ cv <- googlesheets4::read_sheet(cv_url)
 
 ### Technical skills
 
-**Languages:** <i class="fa-brands fa-python"></i> Python, <i class="fa-brands fa-square-js"></i> SQL\
-**Databases:** <i class="fa-solid fa-database" aria-hidden="true"></i> SQL, <i class="fa-solid fa-snowflake"></i> Snowflake\
+**Languages:** {{< fa brands python >}} Python, {{< fa brands square-js >}} SQL\
+**Databases:** {{< fa database >}} SQL, {{< fa snowflake >}} Snowflake\
 **Frameworks:** FastAPI, Panel(Holoviz)\
-**Cloud computing:** <i class="fa-solid fa-cloud"></i> AWS, GCP <i class="fa-brands fa-docker"></i> Docker, Kubernetes\
-**DevOps:** CI/CD, <i class="fa-brands fa-github"></i> GitHub
+**Cloud computing:** {{< fa cloud >}} AWS, GCP, {{< fa brands docker >}} Docker, Kubernetes\
+**DevOps:** CI/CD, {{< fa brands github >}} GitHub
 
 ### Languages
 
@@ -56,90 +55,19 @@ cv <- googlesheets4::read_sheet(cv_url)
 
 ::: g-col-8
 
-```{r}
-col_br <- function(col){
-    dplyr::if_else(
-      !is.na(col) & col != "N/A|NA", 
-      paste0("<br> ", col, ""),
-      ""
-    )
-}
-
-col_no_br <- function(col){
-    dplyr::if_else(
-      !is.na(col) & col != "N/A|NA", 
-      paste0("| ", col, ""),
-      ""
-    )
-}
-
-col_br_loc <- function(col){
-    dplyr::if_else(
-      !is.na(col) & col != "N/A|NA", 
-      paste0('<br><i class="fa-solid fa-location-dot"></i> ', col),
-      ""
-    )
-}
-
-create_section <- function(cv_data, section_name){
-  cv_data |>
-    dplyr::mutate(in_resume = as.character(in_resume),
-                  end = tidyr::replace_na(end, 9999),
-                  loc = dplyr::if_else(loc == "Online", NA_character_, loc)) |>
-    dplyr::filter(in_resume %in% c("TRUE", "VERDADEIRO"), section == section_name) |>
-    dplyr::select(section:description_1) |>
-    dplyr::arrange(desc(end), desc(start)) |>
-    dplyr::mutate(
-      date =
-        dplyr::case_when(
-          end == 9999 ~ glue::glue("Current <br> | <br> {start}"),
-          end != start ~ glue::glue("{end} <br> | <br> {start}"),
-          end == start ~ glue::glue("{end}"),
-          TRUE ~ ""
-        ) ,
-      .before = everything()
-    ) |>
-    dplyr::mutate(
-      main_text =
-        glue::glue(
-          "**{title}** {col_no_br(institution)} {col_no_br(loc)} {col_br(description_1)}"),
-      .after = date
-    ) |>
-    dplyr::select(-c(start, end, section, title, institution, loc, description_1)) |>
-    gt::gt(id = 'table_id') |>
-    gt::cols_width(
-        date ~ gt::pct(15)
-    ) |>
-    gt::fmt_markdown(columns = c(date, main_text)) |> 
-    gt::tab_options(column_labels.hidden = TRUE,
-      table.width = gt::pct(100),
-      quarto.disable_processing = TRUE,
-      quarto.use_bootstrap = TRUE
-    ) |> 
-    gt::cols_align(align = "left", columns = main_text) |>
-    gt::opt_css(
-      '
-      #table_id .gt_table {
-        font-family: var(--bs-body-font-family);
-      }
-      '
-    )
-}
-```
-
 <!-- Main content -->
 
 # Ivar Soares Urdalen
 
-I am currently working as a Senior Data Engineer in the [Alternative Data](https://en.wikipedia.org/wiki/Alternative_data_(finance)) space for finance.
+I am currently working as a Senior AI Engineer in the [Alternative Data](https://en.wikipedia.org/wiki/Alternative_data_(finance)) space for finance.
 
 I have a [MSc in Financial Engineering](https://www.wqu.edu/programs/mscfe/) from [World Quant University](https://www.wqu.edu/) and a MSc in Civil Engineering from [NTNU](https://www.ntnu.edu/).
 
 I have taken courses and developed my own coding projects in the intersection of data engineering and finance. Check out my [website](https://www.ivarurdalen.com) to learn more about me and connect.
 
-## <i class="fa-solid fa-suitcase"></i> Work
+## {{< fa suitcase >}} Work
 
-```{r}
+```{python}
 create_section(cv, "working_experience")
 ```
 
@@ -147,29 +75,27 @@ create_section(cv, "working_experience")
 
 ::: g-col-12
 
-## <i class="fa-solid fa-code"></i> Personal Projects
+## {{< fa code >}} Personal Projects
 
-```{r}
+```{python}
 create_section(cv, "personal_projects")
 ```
 
-<!-- [See website for additional projects.](https://ivarurdalen.github.io/site/portfolio) -->
+## {{< fa graduation-cap >}} Education
 
-## <i class="fa-solid fa-graduation-cap"></i> Education
-
-```{r}
+```{python}
 create_section(cv, "education")
 ```
 
-## <i class="fa-solid fa-award"></i> Awards
+## {{< fa award >}} Awards
 
-```{r}
+```{python}
 create_section(cv, "awards")
 ```
 
-## <i class="fa-solid fa-chalkboard-user"></i> Courses
+## {{< fa chalkboard-user >}} Courses
 
-```{r}
+```{python}
 create_section(cv, "online_courses")
 ```
 
@@ -178,12 +104,12 @@ create_section(cv, "online_courses")
 
 <!-- footer -->
 
-<p class="footer">
-
-This data driven CV is made with [Quarto](https://quarto.org/) and Google Sheets. Last updated on `r format.Date(Sys.Date(), "%b %d, %Y")`. <br> Code available on <i class="fa-brands fa-github"></i> [GitHub](https://github.com/ivarurdalen/).
-
-</p>
-
-```{=html}
-<script src="https://kit.fontawesome.com/1bb720cc6f.js" crossorigin="anonymous"></script>
+::: footer
+```{python}
+#| output: asis
+#| echo: false
+today = date.today().strftime("%b %d, %Y")
+print(f'This data driven CV is made with [Quarto](https://quarto.org/) and Google Sheets. Last updated on {today}.')
 ```
+Code available on {{< fa brands github >}} [GitHub](https://github.com/ivarurdalen/).
+:::

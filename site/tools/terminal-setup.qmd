@@ -1,0 +1,43 @@
+---
+title: "Terminal Setup"
+---
+
+My terminal environment optimized for daily development and AI agent usage.
+
+## Terminal Emulator
+
+**[Kitty](https://github.com/kovidgoyal/kitty)** — A fast, feature-rich, GPU-accelerated terminal emulator. Supports ligatures, image rendering, and extensive customization via config files.
+
+## Shell
+
+**[Zsh](https://github.com/zsh-users/zsh)** with **[Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)** — Zsh as the primary shell, managed through Oh My Zsh for easy plugin and theme management.
+
+- **Theme:** `af-magic`
+- **Plugins:**
+  - [`zsh-autosuggestions`](https://github.com/zsh-users/zsh-autosuggestions) — suggests commands as you type based on history
+  - [`zsh-syntax-highlighting`](https://github.com/zsh-users/zsh-syntax-highlighting) — real-time syntax highlighting in the terminal
+  - `git`, `git-prompt`, `gh` — Git and GitHub CLI integration
+  - `z` — frecency-based directory jumping
+  - `docker`, `docker-compose` — Docker completions and aliases
+  - `gcloud`, `kubectl` — Google Cloud and Kubernetes tooling
+  - `uv` — Python package manager completions
+
+## Core Tools
+
+### [fzf](https://github.com/junegunn/fzf)
+**Fuzzy finder** — Replaces the default `Ctrl+R` history search with an interactive, fuzzy-matching search. Also useful for file selection and piping into other commands.
+
+### [eza](https://github.com/eza-community/eza)
+**Modern `ls` replacement** — Provides colorized output, git status integration, tree views, and icons. A maintained fork of the original `exa`.
+
+### [micro](https://github.com/zyedidia/micro)
+**Terminal text editor** — A modern alternative to `nano` with intuitive keybindings (`Ctrl+S` to save, `Ctrl+Q` to quit), syntax highlighting, mouse support, and plugin extensibility.
+
+### [rich-cli](https://github.com/Textualize/rich-cli)
+**Syntax-highlighted file viewer** — Installed via `uv tool install rich-cli`. Acts as a `cat` replacement that renders markdown, JSON, CSV, and source code with syntax highlighting and formatting.
+
+### [delta](https://github.com/dandavison/delta)
+**Git pager** — A syntax-highlighting pager for `git diff`, `git log`, and `git show` output. Provides side-by-side diffs, line numbers, and language-aware highlighting out of the box.
+
+### [fala](https://pypi.org/project/fala/)
+**Speech-to-text CLI** — A Python package built on the OpenAI Whisper API for transcribing speech directly from the terminal. Useful for voice-driven workflows and dictation.

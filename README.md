@@ -2,39 +2,42 @@
 
 My personal website where I write about topics related to finance and data engineering.
 
-## Development Workflow
+## Prerequisites
 
-This site is developed using [Quarto](https://quarto.org/).
-Make sure the [latest version](https://quarto.org/docs/download/) is installed.
+- [Quarto](https://quarto.org/docs/download/) (latest version)
+- [uv](https://docs.astral.sh/uv/) (Python package manager)
 
-To render (build) use the following command in the repo folder.
+## Setup
 
 ```bash
-quarto render
+uv sync
 ```
 
-To open the latest rendering open the project in a web browser:
+## Development
+
+Preview the site locally:
 
 ```bash
-firefox docs/index.html
+uv run quarto preview
 ```
 
-The rendered site is stored in the `docs` folder.
+## Publishing
 
-This site uses the [alternative](https://quarto.org/docs/publishing/github-pages.html#render-to-docs)
-to push the `docs` folder to the `main` branch of the GitHub repo.
+The site is deployed to GitHub Pages via a GitHub Actions workflow that triggers on every push to `main`. The workflow builds the site and publishes it to the `gh-pages` branch.
 
-Push the updated `docs` folder to GitHub to publish it to GitHub Pages.
+R code outputs are cached locally using Quarto's [freeze](https://quarto.org/docs/projects/code-execution.html#freeze) feature. This means CI doesn't need to re-execute Python code — it uses the pre-computed results from the `_freeze/` directory.
+
+**When you change `.qmd` files that contain Python code**, render locally and commit the frozen outputs:
 
 ```bash
-git add docs
-git commit -m "<message>"
+./render.sh
+git commit -m "your message"
 git push
 ```
 
-## Quarto Extensions
+For changes to plain markdown `.qmd` files (no Python code), just commit and push — CI handles the rendering.
 
-When using Quarto extensions they should be checked into the GitHub repo.
+## Quarto Extensions
 
 Extensions used in the project:
 

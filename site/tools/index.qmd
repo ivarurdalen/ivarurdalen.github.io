@@ -1,0 +1,7 @@
+---
+title: "Tools"
+---
+
+A collection of tools and configurations I use in my daily workflow.
+
+- [Terminal Setup](terminal-setup.qmd) — My terminal environment optimized for development and AI agent usage.

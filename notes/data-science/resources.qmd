@@ -1,7 +1,0 @@
----
-title: "Resources"
-format: html
-page-layout: article
----
-
-Resources for data science

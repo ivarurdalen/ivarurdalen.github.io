@@ -28,7 +28,7 @@ editor: source
 
 [![](profile_160.jpg){.rounded}](https://ivarurdalen.github.io)  
   
-🏢 [Senior Data Engineer](https://www.linkedin.com/in/ivarurdalen/) at <a href='https://www.exabel.com/' target='_blank'>Exabel</a>  
+🏢 [Senior AI Engineer](https://www.linkedin.com/in/ivarurdalen/) at <a href='https://www.exabel.com/' target='_blank'>Exabel</a>  
 {{< fa brands github >}} <a href='https://github.com/ivarurdalen' target='_blank'>GitHub</a>
 
 :::
@@ -37,7 +37,7 @@ editor: source
 
 ### Hi there, I am Ivar Soares Urdalen 👋
 
-I currently work as a Senior Data Engineer at [Exabel](https://www.exabel.com/)
+I currently work as a Senior AI Engineer at [Exabel](https://www.exabel.com/)
 
 Feel free to [check out my online CV](cv_ivar.html) if interested.   
 Or check out my [portfolio of different projects](site/portfolio/index.qmd).  

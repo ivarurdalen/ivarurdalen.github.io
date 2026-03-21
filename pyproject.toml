@@ -1,0 +1,14 @@
+[project]
+name = "ivarurdalen-site"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas",
+    "great_tables",
+    "jupyter",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.7",
+]
