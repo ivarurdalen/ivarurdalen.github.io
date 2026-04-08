@@ -27,6 +27,12 @@ My terminal environment optimized for daily development and AI agent usage.
 ### [fzf](https://github.com/junegunn/fzf)
 **Fuzzy finder** — Replaces the default `Ctrl+R` history search with an interactive, fuzzy-matching search. Also useful for file selection and piping into other commands.
 
+### [fd](https://github.com/sharkdp/fd)
+**Modern `find` replacement** — A simple, fast, and user-friendly alternative to `find`. Uses sensible defaults (respects `.gitignore`, colorized output, smart case), regex patterns by default, and intuitive syntax like `fd pattern` instead of `find . -name '*pattern*'`.
+
+### [zoxide](https://github.com/ajeetdsouza/zoxide)
+**Smarter `cd` replacement** — A smarter alternative to `cd` that learns your most-used directories. Type `z foo` to jump to the most frecent directory matching "foo". Works alongside the `z` Oh My Zsh plugin but adds persistent database tracking across sessions.
+
 ### [eza](https://github.com/eza-community/eza)
 **Modern `ls` replacement** — Provides colorized output, git status integration, tree views, and icons. A maintained fork of the original `exa`.
 
@@ -36,8 +42,17 @@ My terminal environment optimized for daily development and AI agent usage.
 ### [rich-cli](https://github.com/Textualize/rich-cli)
 **Syntax-highlighted file viewer** — Installed via `uv tool install rich-cli`. Acts as a `cat` replacement that renders markdown, JSON, CSV, and source code with syntax highlighting and formatting.
 
+### [bat](https://github.com/sharkdp/bat)
+**`cat` with wings** — A `cat` clone with syntax highlighting, git integration, and automatic paging. Shows line numbers and git modifications by default. Integrates well with other tools like `fzf` for previewing file contents during search.
+
 ### [delta](https://github.com/dandavison/delta)
 **Git pager** — A syntax-highlighting pager for `git diff`, `git log`, and `git show` output. Provides side-by-side diffs, line numbers, and language-aware highlighting out of the box.
+
+### [lazygit](https://github.com/jesseduffield/lazygit)
+**Terminal UI for git** — A full-featured terminal user interface for git commands. Provides interactive staging, branching, rebasing, and conflict resolution through a keyboard-driven TUI. Significantly faster for complex git workflows than raw CLI commands.
+
+### [lazydocker](https://github.com/jesseduffield/lazydocker)
+**Terminal UI for Docker** — A terminal user interface for managing Docker containers, images, volumes, and networks. Monitor logs, stats, and resource usage in real time without memorizing docker CLI flags.
 
 ### [fala](https://pypi.org/project/fala/)
 **Speech-to-text CLI** — A Python package built on the OpenAI Whisper API for transcribing speech directly from the terminal. Useful for voice-driven workflows and dictation.
